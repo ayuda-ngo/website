@@ -3,9 +3,9 @@ import { storySection } from "../information.js";
 import React from "react";
 import styled from "styled-components";
 
-import { theme, Section } from "../styles/styles.jsx";
+import { theme, Section, media } from "../styles/styles.jsx";
 
-const { colors, fontSizes, cardShadow } = theme;
+const { colors, fontSizes } = theme;
 
 const StoryDiv = styled.div`
   display: block;
@@ -19,20 +19,15 @@ const StoryTitle = styled.div`
   padding: 3px;
 `;
 
-const StoryHeading = styled.div`
+const StoryHeading = styled.h4`
   text-align: center;
-  margin: 0px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  position: absolute;
+  padding: 10px;
+  padding-top: 30px;
 `;
 
 const StoryBody = styled.div`
   text-align: left;
   font-size: ${fontSizes.sm};
-  opacity: 1;
   padding: 0 15px;
   margin: 0px;
   top: 50%;
@@ -41,9 +36,11 @@ const StoryBody = styled.div`
   -ms-transform: translate(-50%, -50%);
   width: 100%;
   position: absolute;
-  opacity: 0.35;
-  filter: blur(2px);
-  transition: 0.3s ease;
+
+  ${media.thone`
+  font-size: ${fontSizes.smish};
+
+  `};
 `;
 
 const VideoContainer = styled.div`
@@ -53,23 +50,10 @@ const VideoContainer = styled.div`
   border-radius: 10px;
 `;
 
-const StoryContainer = styled(Section)`
-  max-width: 94%;
-  color: white;
-  margin-bottom: 5%;
+const StoryContainer = styled.div`
+  margin-bottom: 20px;
   height: 300px;
-  border-radius: 0.8rem;
   position: relative;
-  box-shadow: ${cardShadow};
-  &:hover {
-    ${StoryHeading} {
-      opacity: 0;
-    }
-    ${StoryBody} {
-      opacity: 1;
-      filter: none;
-    }
-  }
 `;
 
 const StoryContainerWrapper = styled(Section)`
@@ -87,17 +71,14 @@ export default function StorySection() {
         <Row>
           <Col lg={6}>
             <StoryContainer>
-              <StoryHeading id="1">
-                <h4 className="p-3">{storySection.howWeGotStrated.title}</h4>
-              </StoryHeading>
+              <StoryHeading>{storySection.howWeGotStrated.title}</StoryHeading>
               <StoryBody>{storySection.howWeGotStrated.text}</StoryBody>
             </StoryContainer>
           </Col>
           <Col lg={6}>
             <StoryContainer id="2">
-              <StoryHeading>
-                <h4 className="p-3">{storySection.whereAreWeNow.title}</h4>
-              </StoryHeading>
+              <StoryHeading>{storySection.whereAreWeNow.title}</StoryHeading>
+
               <StoryBody>{storySection.whereAreWeNow.text}</StoryBody>
             </StoryContainer>
           </Col>

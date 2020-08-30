@@ -1,6 +1,7 @@
 import "./App.css";
 
-import React from "react";
+import React, { Component } from "react";
+import PageLoader from "./components/loader.jsx";
 import NavBar from "./components/navBar.jsx";
 import IntroductionSection from "./components/introductionSection.jsx";
 import StorySection from "./components/storySection.jsx";
@@ -12,21 +13,37 @@ import GetInTouchSection from "./components/getInTouchSection.jsx";
 import AboutUsSecton from "./components/aboutUsSection.jsx";
 import Footer from "./components/footer.jsx";
 
-function App() {
-  return (
-    <React.Fragment>
-      <NavBar />
-      <IntroductionSection />
-      <StorySection />
-      <InitiativesSection />
-      <EventsSection />
-      <BlogsSection />
-      <BoardMembersSection />
-      <GetInTouchSection />
-      <AboutUsSecton />
-      <Footer />
-    </React.Fragment>
-  );
+class App extends Component {
+  state = {
+    loading: true,
+  };
+
+  componentDidMount() {
+    setTimeout(() => {
+      console.log("Hello, World!");
+      this.setState({ loading: false });
+    }, 3000);
+  }
+
+  render() {
+    if (this.state.loading) {
+      return <PageLoader />;
+    }
+    return (
+      <React.Fragment>
+        <NavBar />
+        <IntroductionSection />
+        <StorySection />
+        <InitiativesSection />
+        <EventsSection />
+        <BlogsSection />
+        <BoardMembersSection />
+        <GetInTouchSection />
+        <AboutUsSecton />
+        <Footer />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

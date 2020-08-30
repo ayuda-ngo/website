@@ -78,7 +78,10 @@ const StyledTabButton = styled.button`
   height: ${theme.tabHeight}px;
   padding: 0 20px 2px;
   transition: ${theme.transition};
-  border: none;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 2px solid ${colors.black};
   text-align: left;
   white-space: nowrap;
   outline: none;
@@ -153,7 +156,9 @@ const StyledTabContent = styled.div`
   height: 200px;
   padding-top: 12px;
   padding-left: 30px;
+  outline: none;
   // border: 2px solid black;
+
   ${media.tablet`padding-left: 20px;
   height: 600px;
   `};
@@ -166,16 +171,24 @@ const StyledTabContent = styled.div`
 `;
 
 const EventHeading = styled.div`
-  padding: 10px;
+  padding: 10px 30px;
   font-size: ${fontSizes.xxl};
   color: inherit;
+
+  ${media.thone`
+    margin-top: 20px;
+  `};
 `;
 
 const EventText = styled.div`
-  padding: 10px;
+  padding: 10px 30px;
   font-size: ${fontSizes.smish};
   color: inherit;
-  ${media.thone`font-size: ${fontSizes.md};`};
+
+  ${media.thone`
+    margin-top: 20px;
+    font-size: ${fontSizes.md};
+  `};
 `;
 
 const EventCardImageWrapper = styled.div`

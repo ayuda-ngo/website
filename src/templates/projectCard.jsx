@@ -16,8 +16,7 @@ const ProjectCardContainer = styled.div`
 
   ${media.thone`
   margin: 35px;
-  max-width: 320px;
-  width: 320px;
+  max-width: fit-content;
   height: 350px;
   vertical-align: middle;
   border-radius: ${borderRadius};
@@ -40,6 +39,7 @@ const ProjectCardTitle = styled.div`
   padding: 10px 15px 10px 10px;
   text-align: right;
   font-size: ${fontSizes.xxl};
+
   ${media.thone`
   padding: 10px;
   text-align: center;
