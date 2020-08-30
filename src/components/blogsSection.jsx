@@ -2,7 +2,7 @@ import BlogCard from "../templates/blogCard.jsx";
 import { blogSection } from "../information.js";
 import React from "react";
 import styled from "styled-components";
-import { Section, media } from "../styles/styles.jsx";
+import { Section, media, mixins } from "../styles/styles.jsx";
 
 const BlogsMain = styled.div`
   flex: 1;
@@ -14,6 +14,7 @@ const BlogsBody = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   ${media.tablet`
+  ${mixins.scrollbar};
   flex-direction: column;
   overflow-x: scroll;
   height:250px;

@@ -9,6 +9,7 @@ import React from "react";
 
 import NavBar from "../components/navBar.jsx";
 import StorySection from "../components/storySection.jsx";
+import InitiativesSection from "../components/initiativesSection.jsx";
 import BlogsSection from "../components/blogsSection.jsx";
 import BoardMembersSection from "../components/boardmembersSection.jsx";
 import GetInTouchSection from "../components/getInTouchSection.jsx";
@@ -20,6 +21,7 @@ export default function Sections() {
     <React.Fragment>
       <NavBar />
       <StorySection />
+      <InitiativesSection />
       <BlogsSection />
       <BoardMembersSection />
       <GetInTouchSection />

@@ -51,7 +51,6 @@ const VideoContainer = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  max-width: 94%;
 `;
 
 const StoryContainer = styled(Section)`
@@ -91,6 +90,8 @@ export default function StorySection() {
               </StoryHeading>
               <StoryBody>{storySection.howWeGotStrated.text}</StoryBody>
             </StoryContainer>
+          </Col>
+          <Col lg={6}>
             <StoryContainer id="2">
               <StoryHeading>
                 <h4 className="p-3">{storySection.whereAreWeNow.title}</h4>
@@ -98,18 +99,16 @@ export default function StorySection() {
               <StoryBody>{storySection.whereAreWeNow.text}</StoryBody>
             </StoryContainer>
           </Col>
-          <Col lg={6}>
-            <VideoContainer className="embed-responsive embed-responsive-16by9 ">
-              <video
-                title={storySection.video.title}
-                controls="controls"
-                preload="metadata"
-              >
-                <source type="video/webm" src={storySection.video.src} />
-              </video>
-            </VideoContainer>
-          </Col>
         </Row>
+        <VideoContainer className="embed-responsive embed-responsive-16by9 ">
+          <video
+            title={storySection.video.title}
+            controls="controls"
+            preload="metadata"
+          >
+            <source type="video/webm" src={storySection.video.src} />
+          </video>
+        </VideoContainer>
       </StoryDiv>
     </StoryContainerWrapper>
   );

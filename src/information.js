@@ -71,6 +71,14 @@ const blogSection = {
       text:
         "Every year, on July 11, World Population Day is observed by the UN with the primary narrative being to promulgate...",
     },
+    {
+      id: 4,
+      url:
+        "https://medium.com/@ngoayuda/where-healing-comes-from-heart-4991e82ea075",
+      title: "WHERE HEALING COMES FROM HEART",
+      text:
+        "In this current situation, the world requires a definite energy to shatter the negative forces ...",
+    },
   ],
 };
 
@@ -238,13 +246,15 @@ const initiativesSection = {
       text:
         "This is an initiative to augment the green cover in the areas where the vegetation is less. In times of increasing urban expansion and drastic decline in foliage, this project provides a way to restore the flora of surrounding areas.",
       image: require("./assets/images/go-green.png"),
+      link: "https://www.google.com",
     },
     {
       id: 2,
       title: "PROJECT GYAAN",
       text:
-        "Our student volunteers go to schools in Vellore and teach students using creative and technological methods.  We provide more resources for their academic and holistic development. The resources usually includes fun games with an academic approach, group discussions and much more.",
+        "Our student volunteers go to schools in Vellore and teach students using creative methods. We provide more resources for their academic and holistic development. The resources usually includes fun games with an academic approach, group discussions and much more.",
       image: require("./assets/images/gyaan.png"),
+      link: "https://www.google.com",
     },
     {
       id: 3,
@@ -252,6 +262,7 @@ const initiativesSection = {
       text:
         "As cultural and extra-curricular activities are a crucial part of a person’s life, we organise sporting events, dance and music competitions, dress-up games, and story-telling sessions for the orphans and the old age crowd as a means to do something out of the ordinary.",
       image: require("./assets/images/muskaan.png"),
+      link: "https://www.google.com",
     },
     {
       id: 4,
@@ -259,13 +270,15 @@ const initiativesSection = {
       text:
         "This is an ongoing effort made to provide for the needy by effective means. We collect old clothes, unused stationery items and other daily essential items from our students itself, by setting up donation boxes in our hostels where people can drop item",
       image: require("./assets/images/nirman.png"),
+      link: "https://www.google.com",
     },
     {
       id: 5,
       title: "PROJECT SUDHAAR",
       text:
-        "This is an initiative to conduct medical health camps for the underprivileged community like the mentally retarded patients, orphans or the elderly crowd. This is inclusive of eye check-up drives and overall physical check-ups to ensure a healthy and a safe lifestyle.",
+        "Here we conduct medical health camps for the underprivileged community like the mentally retarded patients, orphans or the elderly crowd. This is inclusive of eye check-up drives and overall physical check-ups to ensure a healthy and a safe lifestyle.",
       image: require("./assets/images/sudhaar.png"),
+      link: "https://www.google.com",
     },
   ],
 };

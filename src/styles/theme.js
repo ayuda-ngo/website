@@ -30,7 +30,7 @@ export const theme = {
   easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
   transition: "all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)",
 
-  borderRadius: "3px",
+  borderRadius: "20px",
   navHeight: "100px",
   navScrollHeight: "70px",
   margin: "20px",
@@ -40,7 +40,7 @@ export const theme = {
   radius: 3,
 
   cardShadow:
-    "-25px -25px 70px rgba(56, 56, 56, 0.3), 25px 25px 70px rgba(0, 0, 0, 0.35);",
+    "-25px -25px 50px rgba(255, 255, 255, 0.3), 25px 25px 50px rgba(220, 220, 220, 0.35);",
 
   hamburgerWidth: 30,
   hamBefore: `top 0.1s ease-in 0.25s, opacity 0.1s ease-in`,

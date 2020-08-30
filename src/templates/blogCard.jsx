@@ -11,7 +11,6 @@ const BlogContainer = styled.div`
   text-decoration: none;
   margin: 25px;
   max-width: 20rem;
-  height: ;
 `;
 
 const BlogHeading = styled.div`
