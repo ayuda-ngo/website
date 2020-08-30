@@ -20,27 +20,29 @@ class App extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      console.log("Hello, World!");
       this.setState({ loading: false });
     }, 3000);
   }
 
   render() {
-    if (this.state.loading) {
-      return <PageLoader />;
-    }
     return (
       <React.Fragment>
-        <NavBar />
-        <IntroductionSection />
-        <StorySection />
-        <InitiativesSection />
-        <EventsSection />
-        <BlogsSection />
-        <BoardMembersSection />
-        <GetInTouchSection />
-        <AboutUsSecton />
-        <Footer />
+        {this.state.loading ? (
+          <PageLoader />
+        ) : (
+          <React.Fragment>
+            <NavBar />
+            <IntroductionSection />
+            <StorySection />
+            <InitiativesSection />
+            <EventsSection />
+            <BlogsSection />
+            <BoardMembersSection />
+            <GetInTouchSection />
+            <AboutUsSecton />
+            <Footer />
+          </React.Fragment>
+        )}
       </React.Fragment>
     );
   }
