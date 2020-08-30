@@ -4,10 +4,3 @@ code {
   font-family: source-code-pro, Capriola, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-:root {
-  --bg: #23232b;
-  --bg-container: rgb(42, 42, 42);
-  --font-color: white;
-  --border-radius: 20px;
-}
