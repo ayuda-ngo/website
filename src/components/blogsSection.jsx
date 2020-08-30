@@ -2,7 +2,8 @@ import BlogCard from "../templates/blogCard.jsx";
 import { blogSection } from "../information.js";
 import React from "react";
 import styled from "styled-components";
-import { Section, media, mixins } from "../styles/styles.jsx";
+import { theme, Section, media, mixins } from "../styles/styles.jsx";
+const { colors } = theme;
 
 const BlogsMain = styled.div`
   flex: 1;
@@ -30,6 +31,7 @@ const BlogsContainer = styled.div`
 
 const BlogSectionWrappper = styled(Section)`
   position: relative;
+  color: ${colors.white};
 `;
 
 export default function BlogSection() {

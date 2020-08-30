@@ -2,6 +2,7 @@ import "./App.css";
 
 import React from "react";
 import NavBar from "./components/navBar.jsx";
+import IntroductionSection from "./components/introductionSection.jsx";
 import StorySection from "./components/storySection.jsx";
 import InitiativesSection from "./components/initiativesSection.jsx";
 import EventsSection from "./components/eventsSection.jsx";
@@ -15,6 +16,7 @@ function App() {
   return (
     <React.Fragment>
       <NavBar />
+      <IntroductionSection />
       <StorySection />
       <InitiativesSection />
       <EventsSection />

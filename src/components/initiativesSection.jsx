@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Section } from "../styles/styles.jsx";
+import { Section, theme } from "../styles/styles.jsx";
 import ProjectCard from "../templates/projectCard.jsx";
 import { initiativesSection } from "../information.js";
 
+const { colors } = theme;
+
 const InitiativesSectionWrapper = styled(Section)`
   position: relative;
+  color: ${colors.white};
 `;
 
 const InitiativesContainer = styled.div`

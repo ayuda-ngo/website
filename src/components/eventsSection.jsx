@@ -11,6 +11,7 @@ const { colors, fontSizes, fonts, cardShadow } = theme;
 const EventsSectionWrapper = styled(Section)`
   position: relative;
   margin-bottom: 50px;
+  color: ${colors.white};
 
   ${media.thone`margin: 0;`};
 `;

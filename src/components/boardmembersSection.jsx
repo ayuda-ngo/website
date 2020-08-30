@@ -18,6 +18,7 @@ const BoardMembersContainer = styled.div`
 
 const BoardMembersSectionWrapper = styled(Section)`
   position: relative;
+  color: ${colors.white};
 `;
 
 const MembersCardDiv = styled.div`

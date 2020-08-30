@@ -74,7 +74,9 @@ const StoryContainer = styled(Section)`
 
 const StoryContainerWrapper = styled(Section)`
   position: relative;
+  color: ${colors.white};
 `;
+
 export default function StorySection() {
   return (
     <StoryContainerWrapper id="story">
