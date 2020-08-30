@@ -5,11 +5,11 @@ import React from "react";
 // import CarouselSection from "./carousel/carouselSection.jsx";
 // import EventsSection from "./events/eventsSection.jsx";
 // import GetInTouchSection from "./getInTouch/getInTouchSection.jsx";
-// import InitiativesSection from "../components/initiativesSection.jsx";
 
 import NavBar from "../components/navBar.jsx";
 import StorySection from "../components/storySection.jsx";
 import InitiativesSection from "../components/initiativesSection.jsx";
+import EventsSection from "../components/eventsSection.jsx";
 import BlogsSection from "../components/blogsSection.jsx";
 import BoardMembersSection from "../components/boardmembersSection.jsx";
 import GetInTouchSection from "../components/getInTouchSection.jsx";
@@ -22,6 +22,7 @@ export default function Sections() {
       <NavBar />
       <StorySection />
       <InitiativesSection />
+      <EventsSection />
       <BlogsSection />
       <BoardMembersSection />
       <GetInTouchSection />
