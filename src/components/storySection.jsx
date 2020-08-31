@@ -1,4 +1,3 @@
-import { Col, Row } from "react-bootstrap";
 import { storySection } from "../information.js";
 import React from "react";
 import styled from "styled-components";
@@ -66,21 +65,21 @@ export default function StorySection() {
         <StoryTitle>
           <h1 className="heading p-3 mb-5">{storySection.title}</h1>
         </StoryTitle>
-        <Row>
-          <Col lg={6}>
+        <div className="row">
+          <div className="col lg-6">
             <StoryContainer>
               <StoryHeading>{storySection.howWeGotStrated.title}</StoryHeading>
               <StoryBody>{storySection.howWeGotStrated.text}</StoryBody>
             </StoryContainer>
-          </Col>
-          <Col lg={6}>
+          </div>
+          <div className="col lg-6">
             <StoryContainer id="2">
               <StoryHeading>{storySection.whereAreWeNow.title}</StoryHeading>
 
               <StoryBody>{storySection.whereAreWeNow.text}</StoryBody>
             </StoryContainer>
-          </Col>
-        </Row>
+          </div>
+        </div>
         <VideoContainer className="embed-responsive embed-responsive-16by9 ">
           <video
             title={storySection.video.title}

@@ -1,4 +1,3 @@
-import { Image } from "react-bootstrap";
 import React from "react";
 
 import styled from "styled-components";
@@ -39,7 +38,7 @@ const MemberImageDiv = styled.div`
   }
 `;
 
-const MemberRoundedImage = styled(Image)`
+const MemberRoundedImage = styled.img`
   height: 240px;
   width: 240px;
   border-radius: 50%;

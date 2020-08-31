@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Container } from "react-bootstrap";
 
 import { eventsSection } from "../information.js";
 import styled from "styled-components";
@@ -20,7 +19,7 @@ const EventsTitle = styled.div`
   padding: 3px;
 `;
 
-const EventsDiv = styled(Container)`
+const EventsDiv = styled.div`
   display: flex;
   width: 90%;
   padding: 20px 10px 20px 10px;
