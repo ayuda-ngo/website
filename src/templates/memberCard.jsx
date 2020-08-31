@@ -6,7 +6,7 @@ import { theme } from "../styles/styles.jsx";
 const { colors, cardShadow } = theme;
 
 const StyledCard = styled.div`
-  background: ${colors.bg};
+  background: ${colors.cardColor};
   box-shadow: ${cardShadow};
   border-radius: 30px;
   max-width: 250px;

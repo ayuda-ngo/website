@@ -2,8 +2,8 @@
 
 html {
   scroll-behavior: smooth;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   font-family: -apple-system, "Capriola", "Montserrat", BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
-  background-color: #23232b;
+  background-color: #1b82c4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #23232b;
+  background: #1b82c4;
 }
 
 body::-webkit-scrollbar-thumb {

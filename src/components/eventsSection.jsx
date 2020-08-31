@@ -164,9 +164,11 @@ const StyledTabContent = styled.div`
   `};
 
   ${media.thone`
-  padding-left: 0;
-  padding-top: 0;
-  height: 500px;
+    padding-left: 0;
+    padding-top: 0;
+    height: 500px;
+    background-color: ${colors.cardColor};
+    border-radius: 10px;
   `};
 `;
 
@@ -181,12 +183,13 @@ const EventHeading = styled.div`
 `;
 
 const EventText = styled.div`
-  padding: 10px 30px;
+  padding: 0 20px 10px 20px;
   font-size: ${fontSizes.smish};
   color: inherit;
 
   ${media.thone`
     margin-top: 20px;
+    text-align: center;
     font-size: ${fontSizes.md};
   `};
 `;
@@ -203,7 +206,7 @@ const EventCardImageWrapper = styled.div`
     width: 100%;
     height: inherit;
     position: absolute;
-    opacity: 0.25;
+    opacity: 0;
 `};
 `;
 
@@ -220,9 +223,9 @@ const EventCardImage = styled.img`
 
 const EventCardWrapper = styled.div`
   // border: 2px solid green;
-  background-color: ${colors.cardBG};
+  background-color: ${colors.cardColor};
   border-radius: 15px;
-  color: ${colors.black};
+  color: ${colors.white};
   position: absolute;
   width: 45%;
   transform: translate(100%, 90px);
@@ -239,6 +242,7 @@ const EventCardWrapper = styled.div`
   transform: none;
   width: 100%;
   height: inherit;
+  opacity: 1;
 `};
 `;
 

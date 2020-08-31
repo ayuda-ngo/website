@@ -28,18 +28,14 @@ const StoryHeading = styled.h4`
 const StoryBody = styled.div`
   text-align: left;
   font-size: ${fontSizes.sm};
-  padding: 0 15px;
-  margin: 0px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 100%;
-  position: absolute;
+  padding: 15px;
+  margin: 10px;
+  width: content-fit;
+  position: relative;
+  text-align: center;
 
   ${media.thone`
   font-size: ${fontSizes.smish};
-
   `};
 `;
 
@@ -54,6 +50,8 @@ const StoryContainer = styled.div`
   margin-bottom: 20px;
   height: 300px;
   position: relative;
+  background-color: ${colors.cardColor};
+  border-radius: 10px;
 `;
 
 const StoryContainerWrapper = styled(Section)`

@@ -15,9 +15,10 @@ const ContactContainer = styled.div`
   justify-content: center;
 `;
 
-const ContactDescription = styled.span`
+const ContactDescription = styled.div`
   color: ${colors.white};
-  padding: 10px;
+  text-align: center;
+  padding: 8px;
   font-size: ${fontSizes.md};
 `;
 
@@ -25,11 +26,16 @@ const GetInTouchWrapper = styled(Section)`
   position: relative;
   background: ${colors.bg};
   box-shadow: ${cardShadow};
-  border-radius: 30px;
+  border-radius: 20px;
   color: white;
   padding: 25px;
   margin: 50px auto;
-  ${media.tablet`max-width: 94%;`};
+  max-width: 94%;
+
+  ${media.tablet`
+    border-radius: 0;
+    max-width: 100%;
+  `};
 `;
 
 const ContactButton = styled.a`

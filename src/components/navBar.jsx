@@ -12,26 +12,22 @@ const StyledContainer = styled.header`
   ${mixins.flexBetween};
   position: fixed;
   top: 0;
-  padding: 0px 50px;
+  padding: 0px 20px;
   background-color: ${colors.bg};
+  opacity: 0.8;
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
   width: 100%;
-  height: ${(props) =>
-    props.scrollDirection === "none" ? theme.navHeight : theme.navScrollHeight};
-  box-shadow: ${(props) =>
-    props.scrollDirection === "up"
-      ? `0 10px 30px -10px ${colors.black}`
-      : "none"};
-  transform: translateY(
-    ${(props) =>
-      props.scrollDirection === "down" ? `-${theme.navScrollHeight}` : "0px"}
-  );
+  height: ${theme.navHeight};
+  box-shadow: 2px 10px 30px -10px ${colors.black};
   ${media.desktop`padding: 0 40px;`};
-  ${media.tablet`padding: 0 25px;`};
+  ${media.tablet`
+    padding: 0 25px;
+    opacity: 1;
+  `};
 `;
 const StyledNav = styled.nav`
   ${mixins.flexBetween};
@@ -144,7 +140,7 @@ const Link = styled.a`
     color: ${colors.white};
   }
 `;
-const DELTA = 5;
+const DELTA = 20000;
 
 class NavBar extends Component {
   state = {
