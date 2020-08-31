@@ -1,10 +1,10 @@
-import { boardMembersSection } from "../information.js";
-import React from "react";
-import styled from "styled-components";
+import { Section, media, mixins, theme } from "../styles/styles.jsx";
 
 import MemberCard from "../templates/memberCard.jsx";
+import React from "react";
+import { boardMembersSection } from "../information.js";
+import styled from "styled-components";
 
-import { theme, Section, media, mixins } from "../styles/styles.jsx";
 const { colors } = theme;
 
 const BoardMembersContainer = styled.div`

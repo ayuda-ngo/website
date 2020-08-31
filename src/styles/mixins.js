@@ -1,6 +1,6 @@
 import { css } from "styled-components";
-import { theme } from "./theme";
 import media from "./media";
+import { theme } from "./theme";
 const { colors, fontSizes, fonts } = theme;
 
 export const mixins = {

@@ -1,8 +1,8 @@
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import React from "react";
-import Loader from "react-loader-spinner";
-import styled from "styled-components";
 
+import Loader from "react-loader-spinner";
+import React from "react";
+import styled from "styled-components";
 import { theme } from "../styles/styles.jsx";
 
 const { colors } = theme;

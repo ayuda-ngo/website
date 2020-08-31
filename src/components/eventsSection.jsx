@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Section, media, mixins, theme } from "../styles/styles.jsx";
 
 import { eventsSection } from "../information.js";
 import styled from "styled-components";
-import { theme, Section, media, mixins } from "../styles/styles.jsx";
+
 // import EventCard from "../templates/eventCard.jsx";
 
 const { colors, fontSizes, fonts, cardShadow } = theme;

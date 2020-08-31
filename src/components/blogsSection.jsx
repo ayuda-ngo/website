@@ -1,8 +1,10 @@
+import { Section, media, mixins, theme } from "../styles/styles.jsx";
+
 import BlogCard from "../templates/blogCard.jsx";
-import { blogSection } from "../information.js";
 import React from "react";
+import { blogSection } from "../information.js";
 import styled from "styled-components";
-import { theme, Section, media, mixins } from "../styles/styles.jsx";
+
 const { colors } = theme;
 
 const BlogsMain = styled.div`

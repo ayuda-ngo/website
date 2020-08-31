@@ -1,6 +1,6 @@
-import { media } from "./media";
-import { theme } from "./theme";
-import { mixins } from "./mixins";
 import { Section } from "./Section";
+import { media } from "./media";
+import { mixins } from "./mixins";
+import { theme } from "./theme";
 
 export { media, mixins, theme, Section };

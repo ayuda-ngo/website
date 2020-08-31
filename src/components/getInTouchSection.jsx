@@ -1,8 +1,8 @@
-import React from "react";
+import { Section, media, theme } from "../styles/styles.jsx";
 
+import React from "react";
 import { getInTouchSection } from "../information.js";
 import styled from "styled-components";
-import { theme, Section, media } from "../styles/styles.jsx";
 
 const { colors, fontSizes, cardShadow } = theme;
 

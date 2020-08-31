@@ -1,11 +1,13 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { theme, media, mixins } from "../styles/styles.jsx";
-import Menu from "./menu.jsx";
-import IconLogo from "../assets/logo.webp";
-import { throttle } from "../utils/index";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import React, { Component } from "react";
+import { media, mixins, theme } from "../styles/styles.jsx";
+
+import IconLogo from "../assets/logo.webp";
+import Menu from "./menu.jsx";
 import { navLinks } from "../information.js";
+import styled from "styled-components";
+import { throttle } from "../utils/index";
+
 const { colors, fontSizes, fonts, loaderDelay } = theme;
 
 const StyledContainer = styled.header`

@@ -1,7 +1,7 @@
 import React from "react";
-
 import styled from "styled-components";
 import { theme } from "../styles/styles.jsx";
+
 const { colors, cardShadow } = theme;
 
 const StyledCard = styled.div`

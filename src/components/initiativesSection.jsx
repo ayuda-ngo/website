@@ -1,8 +1,9 @@
-import React from "react";
-import styled from "styled-components";
 import { Section, theme } from "../styles/styles.jsx";
+
 import ProjectCard from "../templates/projectCard.jsx";
+import React from "react";
 import { initiativesSection } from "../information.js";
+import styled from "styled-components";
 
 const { colors } = theme;
 

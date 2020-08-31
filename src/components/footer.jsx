@@ -1,5 +1,6 @@
+import { Section, theme } from "../styles/styles.jsx";
+
 import React from "react";
-import { theme, Section } from "../styles/styles.jsx";
 import styled from "styled-components";
 
 const { colors, fontSizes } = theme;

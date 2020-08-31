@@ -1,8 +1,8 @@
-import { storySection } from "../information.js";
-import React from "react";
-import styled from "styled-components";
+import { Section, media, theme } from "../styles/styles.jsx";
 
-import { theme, Section, media } from "../styles/styles.jsx";
+import React from "react";
+import { storySection } from "../information.js";
+import styled from "styled-components";
 
 const { colors, fontSizes } = theme;
 

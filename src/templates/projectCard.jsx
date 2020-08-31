@@ -1,6 +1,8 @@
+import { media, theme } from "../styles/styles.jsx";
+
 import React from "react";
 import styled from "styled-components";
-import { theme, media } from "../styles/styles.jsx";
+
 const { colors, fontSizes, cardShadow, borderRadius } = theme;
 
 const ProjectCardContainer = styled.div`
