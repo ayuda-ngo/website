@@ -12,7 +12,7 @@ body {
   font-family: -apple-system, "Capriola", "Montserrat", BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
-  background-color: #1b82c4;
+  background-color: #23232b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1b82c4;
+  background: #23232b;
 }
 
 body::-webkit-scrollbar-thumb {

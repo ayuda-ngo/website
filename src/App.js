@@ -22,7 +22,7 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ loading: false });
-    }, 1800);
+    }, 2500);
   }
 
   render() {

@@ -26,7 +26,7 @@ class PageLoader extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: false });
-    }, 1000);
+    }, 1800);
   }
   render() {
     return (

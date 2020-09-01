@@ -67,10 +67,10 @@ export default function IntroductionSection() {
       <Fade bottom distance="20px">
         <StyledOverline>{"Hi, we are"}</StyledOverline>
       </Fade>
-      <Fade bottom delay={1200} distance="20px">
+      <Fade bottom delay={1000} distance="20px">
         <StyledTitle>{"AYUDA NGO."}</StyledTitle>
       </Fade>
-      <Fade bottom delay={1600} distance="20px">
+      <Fade bottom delay={1800} distance="20px">
         <StyledSubtitle>
           {"We work for the betterment of our world."}
         </StyledSubtitle>
