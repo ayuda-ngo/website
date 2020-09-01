@@ -1,14 +1,14 @@
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import React, { Component } from "react";
 import { media, mixins, theme } from "../styles/styles.jsx";
 
+import { Fade } from "react-reveal";
 import IconLogo from "../assets/logo.webp";
 import Menu from "./menu.jsx";
 import { navLinks } from "../information.js";
 import styled from "styled-components";
 import { throttle } from "../utils/index";
 
-const { colors, fontSizes, fonts, loaderDelay } = theme;
+const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled.header`
   ${mixins.flexBetween};
@@ -217,59 +217,35 @@ class NavBar extends Component {
   };
 
   render() {
-    const { isMounted, menuOpen, scrollDirection } = this.state;
-    const { isHome } = this.props;
-    const timeout = isHome ? loaderDelay : 0;
-    const fadeClass = isHome ? "fade" : "";
-    const fadeDownClass = isHome ? "fadedown" : "";
+    const { menuOpen } = this.state;
 
     return (
-      <StyledContainer scrollDirection={scrollDirection}>
+      <StyledContainer>
         <StyledNav>
-          <TransitionGroup component={null}>
-            {isMounted && (
-              <CSSTransition classNames={fadeClass} timeout={timeout}>
-                <StyledLogo src={IconLogo} tabindex="-1">
-                  <a href="/" aria-label="home">
-                    <img src={IconLogo} width={"42px"} alt="Ayuda NGO" />
-                  </a>
-                </StyledLogo>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
-
-          <TransitionGroup component={null}>
-            {isMounted && (
-              <CSSTransition classNames={fadeClass} timeout={timeout}>
-                <StyledHamburger onClick={this.toggleMenu}>
-                  <StyledHamburgerBox>
-                    <StyledHamburgerInner menuOpen={menuOpen} />
-                  </StyledHamburgerBox>
-                </StyledHamburger>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
+          <Fade>
+            <StyledLogo src={IconLogo} tabindex="-1">
+              <a href="/" aria-label="home">
+                <img src={IconLogo} width={"42px"} alt="Ayuda NGO" />
+              </a>
+            </StyledLogo>
+          </Fade>
+          <Fade right distance={"20px"}>
+            <StyledHamburger onClick={this.toggleMenu}>
+              <StyledHamburgerBox>
+                <StyledHamburgerInner menuOpen={menuOpen} />
+              </StyledHamburgerBox>
+            </StyledHamburger>
+          </Fade>
 
           <StyledLink>
             <StyledList>
-              <TransitionGroup component={null}>
-                {isMounted &&
-                  navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <CSSTransition
-                      key={i}
-                      classNames={fadeDownClass}
-                      timeout={timeout}
-                    >
-                      <StyledListItem
-                        key={i}
-                        style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}
-                      >
-                        <Link href={url}>{name}</Link>{" "}
-                      </StyledListItem>
-                    </CSSTransition>
-                  ))}
-              </TransitionGroup>
+              {navLinks.map(({ url, name }, i) => (
+                <Fade top delay={200 * i}>
+                  <StyledListItem key={i}>
+                    <Link href={url}>{name}</Link>{" "}
+                  </StyledListItem>
+                </Fade>
+              ))}
             </StyledList>
           </StyledLink>
         </StyledNav>

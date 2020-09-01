@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Section, media, mixins, theme } from "../styles/styles.jsx";
 
+import { Fade } from "react-reveal";
 import { eventsSection } from "../information.js";
 import styled from "styled-components";
 
@@ -94,6 +95,7 @@ const StyledTabButton = styled.button`
     padding: 0 15px;
     text-align: center;
     border-left: 0;
+  
     border-bottom: 2px solid ${colors.black};
     min-width: 120px;
   `};
@@ -273,10 +275,13 @@ export default function EventsSection() {
   return (
     <EventsSectionWrapper id="events">
       <EventsDiv>
-        <EventsTitle>
-          <h1 className="heading">{eventsSection.title}</h1>
-        </EventsTitle>
+        <Fade bottom distance="40px">
+          <EventsTitle>
+            <h1 className="heading">{eventsSection.title}</h1>
+          </EventsTitle>
+        </Fade>
       </EventsDiv>
+
       <EventsContainer>
         <StyledTabList role="tablist" aria-label="Events tabs">
           <li key={0}>
@@ -337,6 +342,7 @@ export default function EventsSection() {
           </li>
           <StyledHighlight activeTabId={activeTabId} />
         </StyledTabList>
+
         <StyledTabContent
           key={0}
           isActive={activeTabId === 0}
@@ -347,9 +353,12 @@ export default function EventsSection() {
           hidden={activeTabId !== 0}
         >
           <EventCardWrapper>
-            <EventHeading>{eventsSection.events[0].name}</EventHeading>
-            <EventText>{eventsSection.events[0].text}</EventText>
+            <Fade>
+              <EventHeading>{eventsSection.events[0].name}</EventHeading>
+              <EventText>{eventsSection.events[0].text}</EventText>
+            </Fade>
           </EventCardWrapper>
+
           <EventCardImageWrapper>
             <EventCardImage
               alt={eventsSection.events[0].name}

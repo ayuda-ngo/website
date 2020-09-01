@@ -1,5 +1,6 @@
 import { Section, media, theme } from "../styles/styles.jsx";
 
+import { Fade } from "react-reveal";
 import React from "react";
 import { storySection } from "../information.js";
 import styled from "styled-components";
@@ -62,33 +63,42 @@ export default function StorySection() {
   return (
     <StoryContainerWrapper id="story">
       <StoryDiv>
-        <StoryTitle>
-          <h1 className="heading p-3 mb-5">{storySection.title}</h1>
-        </StoryTitle>
+        <Fade bottom distance="40px">
+          <StoryTitle>
+            <h1 className="heading p-3 mb-5">{storySection.title}</h1>
+          </StoryTitle>
+        </Fade>
         <div className="row">
           <div className="col lg-6">
-            <StoryContainer>
-              <StoryHeading>{storySection.howWeGotStrated.title}</StoryHeading>
-              <StoryBody>{storySection.howWeGotStrated.text}</StoryBody>
-            </StoryContainer>
+            <Fade left duration={600} distance="20px">
+              <StoryContainer>
+                <StoryHeading>
+                  {storySection.howWeGotStrated.title}
+                </StoryHeading>
+                <StoryBody>{storySection.howWeGotStrated.text}</StoryBody>
+              </StoryContainer>
+            </Fade>
           </div>
           <div className="col lg-6">
-            <StoryContainer id="2">
-              <StoryHeading>{storySection.whereAreWeNow.title}</StoryHeading>
-
-              <StoryBody>{storySection.whereAreWeNow.text}</StoryBody>
-            </StoryContainer>
+            <Fade right duration={600} distance="20px">
+              <StoryContainer id="2">
+                <StoryHeading>{storySection.whereAreWeNow.title}</StoryHeading>
+                <StoryBody>{storySection.whereAreWeNow.text}</StoryBody>
+              </StoryContainer>
+            </Fade>
           </div>
         </div>
-        <VideoContainer className="embed-responsive embed-responsive-16by9 ">
-          <video
-            title={storySection.video.title}
-            controls="controls"
-            preload="metadata"
-          >
-            <source type="video/webm" src={storySection.video.src} />
-          </video>
-        </VideoContainer>
+        <Fade bottom distance="10px">
+          <VideoContainer className="embed-responsive embed-responsive-16by9 ">
+            <video
+              title={storySection.video.title}
+              controls="controls"
+              preload="metadata"
+            >
+              <source type="video/webm" src={storySection.video.src} />
+            </video>
+          </VideoContainer>
+        </Fade>
       </StoryDiv>
     </StoryContainerWrapper>
   );

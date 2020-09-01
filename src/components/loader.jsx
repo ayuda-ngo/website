@@ -1,7 +1,9 @@
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
+import React, { Component } from "react";
+
+import { Fade } from "react-reveal";
 import Loader from "react-loader-spinner";
-import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles/styles.jsx";
 
@@ -14,16 +16,23 @@ const LoaderWrapper = styled.div`
   margin: -50px 0px 0px -50px;
 `;
 
-export default function PageLoader() {
-  return (
-    <LoaderWrapper>
-      <Loader
-        type="Circles"
-        color={colors.white}
-        height={80}
-        width={80}
-        timeout={28000}
-      />
-    </LoaderWrapper>
-  );
+class PageLoader extends Component {
+  state = {
+    loading: true,
+  };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1000);
+  }
+  render() {
+    return (
+      <LoaderWrapper>
+        <Fade opposite when={this.state.loading}>
+          <Loader type="Circles" color={colors.white} height={80} width={80} />
+        </Fade>
+      </LoaderWrapper>
+    );
+  }
 }
+export default PageLoader;

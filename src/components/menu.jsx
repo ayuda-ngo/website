@@ -99,12 +99,11 @@ const Menu = ({ menuOpen, toggleMenu }) => {
       <Sidebar>
         <NavLinks>
           <NavList>
-            {navLinks &&
-              navLinks.map(({ url, name }, i) => (
-                <NavListItem key={i}>
-                  <Link href={url}>{name}</Link>
-                </NavListItem>
-              ))}
+            {navLinks.map(({ url, name }, i) => (
+              <NavListItem key={i}>
+                <Link href={url}>{name}</Link>
+              </NavListItem>
+            ))}
           </NavList>
         </NavLinks>
       </Sidebar>

@@ -1,6 +1,7 @@
 import { Section, media, mixins, theme } from "../styles/styles.jsx";
 
 import BlogCard from "../templates/blogCard.jsx";
+import { Fade } from "react-reveal";
 import React from "react";
 import { blogSection } from "../information.js";
 import styled from "styled-components";
@@ -40,26 +41,31 @@ export default function BlogSection() {
   return (
     <BlogSectionWrappper id="blogs">
       <BlogsContainer>
-        <div className="blog-header p-3">
-          <h1 className="heading">{blogSection.title}</h1>
-          <p className="subTitle">{blogSection.subtitle}</p>
-        </div>
+        <Fade bottom distance="40px">
+          <div className="blog-header p-3">
+            <h1 className="heading">{blogSection.title}</h1>
+            <p className="subTitle">{blogSection.subtitle}</p>
+          </div>
+        </Fade>
       </BlogsContainer>
+
       <BlogsMain>
-        <BlogsBody>
-          {blogSection.blogs.map((blog) => {
-            return (
-              <BlogCard
-                key={blog.id}
-                blog={{
-                  url: blog.url,
-                  title: blog.title,
-                  text: blog.text,
-                }}
-              />
-            );
-          })}
-        </BlogsBody>
+        <Fade bottom delay={500} distance="40px">
+          <BlogsBody>
+            {blogSection.blogs.map((blog) => {
+              return (
+                <BlogCard
+                  key={blog.id}
+                  blog={{
+                    url: blog.url,
+                    title: blog.title,
+                    text: blog.text,
+                  }}
+                />
+              );
+            })}
+          </BlogsBody>
+        </Fade>
       </BlogsMain>
     </BlogSectionWrappper>
   );

@@ -1,5 +1,6 @@
 import { Section, media, theme } from "../styles/styles.jsx";
 
+import { Fade } from "react-reveal";
 import React from "react";
 import styled from "styled-components";
 
@@ -59,16 +60,24 @@ const StyledDescription = styled.div`
 export default function IntroductionSection() {
   return (
     <IntroductionSectionWrapper>
-      <StyledOverline>{"Hi, we are"}</StyledOverline>
-      <StyledTitle>{"AYUDA NGO."}</StyledTitle>
-      <StyledSubtitle>
-        {"We work for the betterment of our world."}
-      </StyledSubtitle>
-      <StyledDescription>
-        {
-          "Bring out the change in society by spreading hands to help the unprivileged children and other backward communities."
-        }
-      </StyledDescription>
+      <Fade bottom distance="20px">
+        <StyledOverline>{"Hi, we are"}</StyledOverline>
+      </Fade>
+      <Fade bottom delay={1200} distance="20px">
+        <StyledTitle>{"AYUDA NGO."}</StyledTitle>
+      </Fade>
+      <Fade bottom delay={1600} distance="20px">
+        <StyledSubtitle>
+          {"We work for the betterment of our world."}
+        </StyledSubtitle>
+      </Fade>
+      <Fade bottom delay={2000} distance="20px">
+        <StyledDescription>
+          {
+            "Bring out the change in society by spreading hands to help the unprivileged children and other backward communities."
+          }
+        </StyledDescription>
+      </Fade>
     </IntroductionSectionWrapper>
   );
 }
