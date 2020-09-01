@@ -1,6 +1,7 @@
 import { css } from "styled-components";
 import media from "./media";
 import { theme } from "./theme";
+
 const { colors, fontSizes, fonts } = theme;
 
 export const mixins = {
@@ -111,17 +112,16 @@ export const mixins = {
 
   scrollbar: css`
     ::-webkit-scrollbar {
-      // width: 2px;
+      width: 2px;
     }
 
     ::-webkit-scrollbar-track {
-      // width: 8px;
-      background: none;
+      background: ${colors.bg};
     }
 
     ::-webkit-scrollbar-thumb {
       background: #fff;
-      border-radius: 8px;
+      border-radius: 4px;
     }
   `,
 };
