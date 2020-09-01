@@ -16,6 +16,7 @@ const IntroductionSectionWrapper = styled(Section)`
   width: 80%;
   height: unset;
   margin-top: 100px;
+  margin-bottom: 100px;
   `};
 `;
 
