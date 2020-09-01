@@ -1,13 +1,9 @@
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-
 import React, { Component } from "react";
 
 import { Fade } from "react-reveal";
-import Loader from "react-loader-spinner";
+import IconLogo from "../assets/logo.webp";
+import { mixins } from "../styles/styles.jsx";
 import styled from "styled-components";
-import { theme } from "../styles/styles.jsx";
-
-const { colors } = theme;
 
 const LoaderWrapper = styled.div`
   position: absolute;
@@ -16,20 +12,31 @@ const LoaderWrapper = styled.div`
   margin: -50px 0px 0px -50px;
 `;
 
+const StyledLogo = styled.div`
+  ${mixins.flexCenter};
+  a {
+    display: inline;
+  }
+`;
+
 class PageLoader extends Component {
   state = {
-    loading: true,
+    show: true,
   };
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ loading: false });
+      this.setState({ show: false });
     }, 1000);
   }
   render() {
     return (
       <LoaderWrapper>
-        <Fade opposite when={this.state.loading}>
-          <Loader type="Circles" color={colors.white} height={80} width={80} />
+        <Fade opposite when={this.state.show}>
+          <StyledLogo>
+            <a href="/" aria-label="home">
+              <img src={IconLogo} width={"100px"} alt="Ayuda NGO" />
+            </a>
+          </StyledLogo>
         </Fade>
       </LoaderWrapper>
     );

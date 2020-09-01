@@ -223,7 +223,7 @@ class NavBar extends Component {
       <StyledContainer>
         <StyledNav>
           <Fade>
-            <StyledLogo src={IconLogo} tabindex="-1">
+            <StyledLogo tabindex="-1">
               <a href="/" aria-label="home">
                 <img src={IconLogo} width={"42px"} alt="Ayuda NGO" />
               </a>

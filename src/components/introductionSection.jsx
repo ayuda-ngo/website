@@ -11,7 +11,11 @@ const IntroductionSectionWrapper = styled(Section)`
   margin-top: 150px;
   padding: 20px 10px;
   width: 90%;
-  ${media.thone`width: 80%;`};
+  height: 500px;
+  ${media.thone`
+  width: 80%;
+  height: unset;
+  `};
 `;
 
 const StyledOverline = styled.h1`
