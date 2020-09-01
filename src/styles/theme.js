@@ -6,7 +6,10 @@ export const theme = {
     black: "#080808",
     white: "#f8f8f8",
     grey: "#c4c4c4",
-    cardBG: "#999999",
+    heading: "",
+    text: "",
+    accent: "",
+    cardColor: "#414242",
   },
 
   fonts: {
@@ -31,8 +34,8 @@ export const theme = {
   transition: "all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)",
 
   borderRadius: "20px",
-  navHeight: "100px",
-  navScrollHeight: "70px",
+  navHeight: "80px",
+  navScrollHeight: "80px",
   margin: "20px",
 
   tabHeight: 42,
@@ -40,7 +43,7 @@ export const theme = {
   radius: 3,
 
   cardShadow:
-    "-25px -25px 50px rgba(255, 255, 255, 0.3), 25px 25px 50px rgba(220, 220, 220, 0.35);",
+    "-25px -25px 50px rgba(0, 0, 0, 0.3), 25px 25px 50px rgba(0, 0, 0, 0.3);",
 
   hamburgerWidth: 30,
   hamBefore: `top 0.1s ease-in 0.25s, opacity 0.1s ease-in`,

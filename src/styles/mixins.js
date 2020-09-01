@@ -1,6 +1,6 @@
 import { css } from "styled-components";
-import { theme } from "./theme";
 import media from "./media";
+import { theme } from "./theme";
 const { colors, fontSizes, fonts } = theme;
 
 export const mixins = {
@@ -92,28 +92,6 @@ export const mixins = {
     }
   `,
 
-  bigButton: css`
-    color: ${colors.green};
-    background-color: transparent;
-    border: 1px solid ${colors.green};
-    border-radius: ${theme.borderRadius};
-    padding: 1.25rem 1.75rem;
-    font-size: ${fontSizes.sm};
-    font-family: ${fonts.SFMono};
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    transition: ${theme.transition};
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: ${colors.transGreen};
-    }
-    &:after {
-      display: none !important;
-    }
-  `,
-
   sidePadding: css`
     padding: 0 150px;
     ${media.desktop`padding: 0 100px;`};
@@ -131,36 +109,18 @@ export const mixins = {
     }
   `,
 
-  fancyList: css`
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: ${fontSizes.lg};
-    li {
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 10px;
-      &:before {
-        content: "▹";
-        position: absolute;
-        left: 0;
-        color: ${colors.green};
-      }
-    }
-  `,
-
   scrollbar: css`
     ::-webkit-scrollbar {
-      width: 1px;
+      // width: 2px;
     }
 
     ::-webkit-scrollbar-track {
-      width: 1px;
+      // width: 8px;
       background: none;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #888;
+      background: #fff;
       border-radius: 8px;
     }
   `,

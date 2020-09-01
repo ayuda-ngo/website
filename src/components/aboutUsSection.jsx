@@ -1,6 +1,6 @@
 import React from "react";
-import { socialMediaLinks } from "../information.js";
 import { Section } from "../styles/styles.jsx";
+import { socialMediaLinks } from "../information.js";
 import styled from "styled-components";
 
 const AboutUsSectionWrapper = styled(Section)`

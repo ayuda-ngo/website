@@ -1,8 +1,10 @@
-import React from "react";
-import styled from "styled-components";
 import { Section, theme } from "../styles/styles.jsx";
+
+import { Fade } from "react-reveal";
 import ProjectCard from "../templates/projectCard.jsx";
+import React from "react";
 import { initiativesSection } from "../information.js";
+import styled from "styled-components";
 
 const { colors } = theme;
 
@@ -28,18 +30,21 @@ export default function InitiativesSection() {
   return (
     <InitiativesSectionWrapper id="initiatives">
       <InitiativesContainer>
-        <div className="project-header p-3">
-          <h1 className="heading">{initiativesSection.title}</h1>
-          <p className="subTitle">{initiativesSection.subtitle}</p>
-        </div>
+        <Fade bottom distance="40px">
+          <div className="project-header p-3">
+            <h1 className="heading">{initiativesSection.title}</h1>
+            <p className="subTitle">{initiativesSection.subtitle}</p>
+          </div>
+        </Fade>
       </InitiativesContainer>
-      <div className="project-main-div">
+
+      <Fade bottom distance="40px">
         <InitiativesBody>
           {initiativesSection.initiatives.map((initiative) => {
             return <ProjectCard key={initiative.id} cardInfo={initiative} />;
           })}
         </InitiativesBody>
-      </div>
+      </Fade>
     </InitiativesSectionWrapper>
   );
 }

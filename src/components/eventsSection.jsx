@@ -1,12 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Container } from "react-bootstrap";
+import React, { useEffect, useRef, useState } from "react";
+import { Section, media, mixins, theme } from "../styles/styles.jsx";
 
+import { Fade } from "react-reveal";
 import { eventsSection } from "../information.js";
 import styled from "styled-components";
-import { theme, Section, media, mixins } from "../styles/styles.jsx";
+
 // import EventCard from "../templates/eventCard.jsx";
 
-const { colors, fontSizes, fonts, cardShadow } = theme;
+const { colors, fontSizes, fonts, cardShadow, borderRadius } = theme;
 
 const EventsSectionWrapper = styled(Section)`
   position: relative;
@@ -20,7 +21,7 @@ const EventsTitle = styled.div`
   padding: 3px;
 `;
 
-const EventsDiv = styled(Container)`
+const EventsDiv = styled.div`
   display: flex;
   width: 90%;
   padding: 20px 10px 20px 10px;
@@ -94,6 +95,7 @@ const StyledTabButton = styled.button`
     padding: 0 15px;
     text-align: center;
     border-left: 0;
+  
     border-bottom: 2px solid ${colors.black};
     min-width: 120px;
   `};
@@ -109,7 +111,7 @@ const StyledHighlight = styled.span`
   background: ${colors.white};
   width: 2px;
   height: ${theme.tabHeight}px;
-  border-radius: ${theme.borderRadius};
+  border-radius: ${borderRadius};
   position: absolute;
   top: 0;
   left: 0;
@@ -164,9 +166,11 @@ const StyledTabContent = styled.div`
   `};
 
   ${media.thone`
-  padding-left: 0;
-  padding-top: 0;
-  height: 500px;
+    padding-left: 0;
+    padding-top: 0;
+    height: 500px;
+    background-color: ${colors.cardColor};
+    border-radius: 10px;
   `};
 `;
 
@@ -181,12 +185,13 @@ const EventHeading = styled.div`
 `;
 
 const EventText = styled.div`
-  padding: 10px 30px;
+  padding: 0 20px 10px 20px;
   font-size: ${fontSizes.smish};
   color: inherit;
 
   ${media.thone`
     margin-top: 20px;
+    text-align: center;
     font-size: ${fontSizes.md};
   `};
 `;
@@ -203,7 +208,7 @@ const EventCardImageWrapper = styled.div`
     width: 100%;
     height: inherit;
     position: absolute;
-    opacity: 0.25;
+    opacity: 0;
 `};
 `;
 
@@ -211,7 +216,8 @@ const EventCardImage = styled.img`
   height: 250px;
   border-radius: 20px;
 
-  box-shadow: ${cardShadow} ${media.thone`
+  box-shadow: ${cardShadow};
+  ${media.thone`
   border-radius: 10px;
   width: 100%;
   height: inherit;
@@ -220,9 +226,9 @@ const EventCardImage = styled.img`
 
 const EventCardWrapper = styled.div`
   // border: 2px solid green;
-  background-color: ${colors.cardBG};
+  background-color: ${colors.cardColor};
   border-radius: 15px;
-  color: ${colors.black};
+  color: ${colors.white};
   position: absolute;
   width: 45%;
   transform: translate(100%, 90px);
@@ -239,6 +245,7 @@ const EventCardWrapper = styled.div`
   transform: none;
   width: 100%;
   height: inherit;
+  opacity: 1;
 `};
 `;
 
@@ -269,10 +276,13 @@ export default function EventsSection() {
   return (
     <EventsSectionWrapper id="events">
       <EventsDiv>
-        <EventsTitle>
-          <h1 className="heading">{eventsSection.title}</h1>
-        </EventsTitle>
+        <Fade bottom distance="40px">
+          <EventsTitle>
+            <h1 className="heading">{eventsSection.title}</h1>
+          </EventsTitle>
+        </Fade>
       </EventsDiv>
+
       <EventsContainer>
         <StyledTabList role="tablist" aria-label="Events tabs">
           <li key={0}>
@@ -333,6 +343,7 @@ export default function EventsSection() {
           </li>
           <StyledHighlight activeTabId={activeTabId} />
         </StyledTabList>
+
         <StyledTabContent
           key={0}
           isActive={activeTabId === 0}
@@ -343,9 +354,12 @@ export default function EventsSection() {
           hidden={activeTabId !== 0}
         >
           <EventCardWrapper>
-            <EventHeading>{eventsSection.events[0].name}</EventHeading>
-            <EventText>{eventsSection.events[0].text}</EventText>
+            <Fade>
+              <EventHeading>{eventsSection.events[0].name}</EventHeading>
+              <EventText>{eventsSection.events[0].text}</EventText>
+            </Fade>
           </EventCardWrapper>
+
           <EventCardImageWrapper>
             <EventCardImage
               alt={eventsSection.events[0].name}

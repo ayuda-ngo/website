@@ -1,10 +1,11 @@
-import { boardMembersSection } from "../information.js";
+import { Section, media, mixins, theme } from "../styles/styles.jsx";
+
+import { Fade } from "react-reveal";
+import MemberCard from "../templates/memberCard.jsx";
 import React from "react";
+import { boardMembersSection } from "../information.js";
 import styled from "styled-components";
 
-import MemberCard from "../templates/memberCard.jsx";
-
-import { theme, Section, media, mixins } from "../styles/styles.jsx";
 const { colors } = theme;
 
 const BoardMembersContainer = styled.div`
@@ -37,14 +38,17 @@ export default function BoardMembersSection() {
   return (
     <BoardMembersSectionWrapper id="members">
       <BoardMembersContainer>
-        <h1 className="heading p-3 mb-5">{boardMembersSection.title}</h1>
+        <Fade bottom distance="40px">
+          <h1 className="heading p-3 mb-5">{boardMembersSection.title}</h1>
+        </Fade>
       </BoardMembersContainer>
-
-      <MembersCardDiv>
-        {boardMembersSection.boardMembers.map((member) => {
-          return <MemberCard key={member.id} cardInfo={member} />;
-        })}
-      </MembersCardDiv>
+      <Fade bottom delay={500} distance="40px">
+        <MembersCardDiv>
+          {boardMembersSection.boardMembers.map((member) => {
+            return <MemberCard key={member.id} cardInfo={member} />;
+          })}
+        </MembersCardDiv>
+      </Fade>
     </BoardMembersSectionWrapper>
   );
 }

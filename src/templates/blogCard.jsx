@@ -10,12 +10,12 @@ const BlogContainer = styled.div`
   cursor: pointer;
   text-decoration: none;
   margin: 25px;
-  max-width: 20rem;
+  max-width: 220px;
 `;
 
 const BlogHeading = styled.div`
   color: ${colors.white};
-  font-size: ${fontSizes.md};
+  font-size: ${fontSizes.sm};
   border-radius: 0px 40px 0px 0px;
   font-weight: 700;
   padding: 10px 20px;
@@ -27,7 +27,7 @@ const BlogHeading = styled.div`
 `;
 
 const BlogText = styled.a`
-  font-size: ${fontSizes.sm};
+  font-size: ${fontSizes.xs};
   font-weight: 400;
   background-color: ${colors.grey};
   padding: 10px;

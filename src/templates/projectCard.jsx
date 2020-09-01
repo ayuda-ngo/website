@@ -1,6 +1,8 @@
+import { media, theme } from "../styles/styles.jsx";
+
 import React from "react";
 import styled from "styled-components";
-import { theme, media } from "../styles/styles.jsx";
+
 const { colors, fontSizes, cardShadow, borderRadius } = theme;
 
 const ProjectCardContainer = styled.div`
@@ -10,6 +12,7 @@ const ProjectCardContainer = styled.div`
   width: 350px;
   height: 300px;
   border: 2px solid black;
+  background-color: ${colors.cardColor};
   box-shadow: ${cardShadow};
   margin: 55px;
   border-radius: ${borderRadius};
@@ -19,7 +22,6 @@ const ProjectCardContainer = styled.div`
   max-width: fit-content;
   height: 350px;
   vertical-align: middle;
-  border-radius: ${borderRadius};
 `};
 `;
 
@@ -54,6 +56,7 @@ const ProjectCardText = styled.div`
 
   ${media.thone`
   padding: 10px;
+  text-align: center;
   font-size: ${fontSizes.sm};
   `};
 `;
@@ -65,7 +68,7 @@ const ProjectCardImageContainer = styled.div`
 
   ${media.thone`
   transform: none;
-  opacity: 0.25;
+  opacity: 0;
   position: relative;
   vertical-align: middle;
 `};
@@ -112,11 +115,11 @@ const ProjectButtonWrapper = styled.div`
   position: absolute;
   justify-content: flex-end;
   margin: 20px 10px 20px 0;
-  transform: translate(200px, 280px);
+  transform: translate(200px, 265px);
 
   ${media.thone`
   margin: 20px 0;
-  transform: translate(100%, 280px);
+  transform: translate(110%, 275px);
   `};
 `;
 

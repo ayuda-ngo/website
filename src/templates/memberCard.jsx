@@ -1,14 +1,13 @@
-import { Image } from "react-bootstrap";
 import React from "react";
-
 import styled from "styled-components";
 import { theme } from "../styles/styles.jsx";
-const { colors, cardShadow } = theme;
+
+const { colors, cardShadow, borderRadius } = theme;
 
 const StyledCard = styled.div`
-  background: ${colors.bg};
+  background: ${colors.cardColor};
   box-shadow: ${cardShadow};
-  border-radius: 30px;
+  border-radius: ${borderRadius};
   max-width: 250px;
   width: 250px;
   height: 340px;
@@ -39,7 +38,7 @@ const MemberImageDiv = styled.div`
   }
 `;
 
-const MemberRoundedImage = styled(Image)`
+const MemberRoundedImage = styled.img`
   height: 240px;
   width: 240px;
   border-radius: 50%;

@@ -1,10 +1,10 @@
-import React from "react";
+import { Section, media, theme } from "../styles/styles.jsx";
 
+import React from "react";
 import { getInTouchSection } from "../information.js";
 import styled from "styled-components";
-import { theme, Section, media } from "../styles/styles.jsx";
 
-const { colors, fontSizes, cardShadow } = theme;
+const { colors, fontSizes, cardShadow, borderRadius } = theme;
 
 const ContactContainer = styled.div`
   width: 90%;
@@ -15,9 +15,10 @@ const ContactContainer = styled.div`
   justify-content: center;
 `;
 
-const ContactDescription = styled.span`
+const ContactDescription = styled.div`
   color: ${colors.white};
-  padding: 10px;
+  text-align: center;
+  padding: 8px;
   font-size: ${fontSizes.md};
 `;
 
@@ -25,11 +26,16 @@ const GetInTouchWrapper = styled(Section)`
   position: relative;
   background: ${colors.bg};
   box-shadow: ${cardShadow};
-  border-radius: 30px;
+  border-radius: ${borderRadius};
   color: white;
   padding: 25px;
   margin: 50px auto;
-  ${media.tablet`max-width: 94%;`};
+  max-width: 94%;
+
+  ${media.tablet`
+    border-radius: 0;
+    max-width: 100%;
+  `};
 `;
 
 const ContactButton = styled.a`

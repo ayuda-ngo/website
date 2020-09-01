@@ -1,11 +1,11 @@
-import { Col, Row } from "react-bootstrap";
-import { storySection } from "../information.js";
+import { Section, media, theme } from "../styles/styles.jsx";
+
+import { Fade } from "react-reveal";
 import React from "react";
+import { storySection } from "../information.js";
 import styled from "styled-components";
 
-import { theme, Section, media } from "../styles/styles.jsx";
-
-const { colors, fontSizes } = theme;
+const { colors, fontSizes, borderRadius } = theme;
 
 const StoryDiv = styled.div`
   display: block;
@@ -28,18 +28,14 @@ const StoryHeading = styled.h4`
 const StoryBody = styled.div`
   text-align: left;
   font-size: ${fontSizes.sm};
-  padding: 0 15px;
-  margin: 0px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 100%;
-  position: absolute;
+  padding: 15px;
+  margin: 10px;
+  width: content-fit;
+  position: relative;
+  text-align: center;
 
   ${media.thone`
   font-size: ${fontSizes.smish};
-
   `};
 `;
 
@@ -47,13 +43,15 @@ const VideoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: ${borderRadius};
 `;
 
 const StoryContainer = styled.div`
   margin-bottom: 20px;
   height: 300px;
   position: relative;
+  background-color: ${colors.cardColor};
+  border-radius: ${borderRadius};
 `;
 
 const StoryContainerWrapper = styled(Section)`
@@ -65,33 +63,42 @@ export default function StorySection() {
   return (
     <StoryContainerWrapper id="story">
       <StoryDiv>
-        <StoryTitle>
-          <h1 className="heading p-3 mb-5">{storySection.title}</h1>
-        </StoryTitle>
-        <Row>
-          <Col lg={6}>
-            <StoryContainer>
-              <StoryHeading>{storySection.howWeGotStrated.title}</StoryHeading>
-              <StoryBody>{storySection.howWeGotStrated.text}</StoryBody>
-            </StoryContainer>
-          </Col>
-          <Col lg={6}>
-            <StoryContainer id="2">
-              <StoryHeading>{storySection.whereAreWeNow.title}</StoryHeading>
-
-              <StoryBody>{storySection.whereAreWeNow.text}</StoryBody>
-            </StoryContainer>
-          </Col>
-        </Row>
-        <VideoContainer className="embed-responsive embed-responsive-16by9 ">
-          <video
-            title={storySection.video.title}
-            controls="controls"
-            preload="metadata"
-          >
-            <source type="video/webm" src={storySection.video.src} />
-          </video>
-        </VideoContainer>
+        <Fade bottom distance="40px">
+          <StoryTitle>
+            <h1 className="heading p-3 mb-5">{storySection.title}</h1>
+          </StoryTitle>
+        </Fade>
+        <div className="row">
+          <div className="col-lg-6">
+            <Fade left duration={600} distance="20px">
+              <StoryContainer>
+                <StoryHeading>
+                  {storySection.howWeGotStrated.title}
+                </StoryHeading>
+                <StoryBody>{storySection.howWeGotStrated.text}</StoryBody>
+              </StoryContainer>
+            </Fade>
+          </div>
+          <div className="col-lg-6">
+            <Fade right duration={600} distance="20px">
+              <StoryContainer id="2">
+                <StoryHeading>{storySection.whereAreWeNow.title}</StoryHeading>
+                <StoryBody>{storySection.whereAreWeNow.text}</StoryBody>
+              </StoryContainer>
+            </Fade>
+          </div>
+        </div>
+        <Fade bottom distance="10px">
+          <VideoContainer className="embed-responsive embed-responsive-16by9 ">
+            <video
+              title={storySection.video.title}
+              controls="controls"
+              preload="metadata"
+            >
+              <source type="video/webm" src={storySection.video.src} />
+            </video>
+          </VideoContainer>
+        </Fade>
       </StoryDiv>
     </StoryContainerWrapper>
   );

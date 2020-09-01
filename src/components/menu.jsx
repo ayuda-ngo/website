@@ -1,8 +1,10 @@
+import { media, mixins, theme } from "../styles/styles.jsx";
+
+import PropTypes from "prop-types";
 import React from "react";
 import { navLinks } from "../information.js";
 import styled from "styled-components";
-import { theme, mixins, media } from "../styles/styles.jsx";
-import PropTypes from "prop-types";
+
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled.div`
@@ -31,7 +33,7 @@ const Sidebar = styled.aside`
   right: 0;
   margin-left: auto;
   font-family: ${fonts.SFMono};
-  box-shadow: -10px 0px 30px -15px ${colors.white};
+  // box-shadow: -10px 0px 30px -15px ${colors.white};
   ${media.thone`padding: 25px;`};
   ${media.phablet`width: 75vw;`};
   ${media.tiny`padding: 10px;`};
@@ -97,12 +99,11 @@ const Menu = ({ menuOpen, toggleMenu }) => {
       <Sidebar>
         <NavLinks>
           <NavList>
-            {navLinks &&
-              navLinks.map(({ url, name }, i) => (
-                <NavListItem key={i}>
-                  <Link href={url}>{name}</Link>
-                </NavListItem>
-              ))}
+            {navLinks.map(({ url, name }, i) => (
+              <NavListItem key={i}>
+                <Link href={url}>{name}</Link>
+              </NavListItem>
+            ))}
           </NavList>
         </NavLinks>
       </Sidebar>

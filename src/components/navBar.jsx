@@ -1,37 +1,35 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import { theme, media, mixins } from "../styles/styles.jsx";
-import Menu from "./menu.jsx";
+import { media, mixins, theme } from "../styles/styles.jsx";
+
+import { Fade } from "react-reveal";
 import IconLogo from "../assets/logo.webp";
-import { throttle } from "../utils/index";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Menu from "./menu.jsx";
 import { navLinks } from "../information.js";
-const { colors, fontSizes, fonts, loaderDelay } = theme;
+import styled from "styled-components";
+import { throttle } from "../utils/index";
+
+const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled.header`
   ${mixins.flexBetween};
   position: fixed;
   top: 0;
-  padding: 0px 50px;
+  padding: 0px 20px;
   background-color: ${colors.bg};
+  opacity: 0.8;
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
   width: 100%;
-  height: ${(props) =>
-    props.scrollDirection === "none" ? theme.navHeight : theme.navScrollHeight};
-  box-shadow: ${(props) =>
-    props.scrollDirection === "up"
-      ? `0 10px 30px -10px ${colors.black}`
-      : "none"};
-  transform: translateY(
-    ${(props) =>
-      props.scrollDirection === "down" ? `-${theme.navScrollHeight}` : "0px"}
-  );
+  height: ${theme.navHeight};
+  box-shadow: 2px 10px 30px -10px ${colors.black};
   ${media.desktop`padding: 0 40px;`};
-  ${media.tablet`padding: 0 25px;`};
+  ${media.tablet`
+    padding: 0 25px;
+    opacity: 1;
+  `};
 `;
 const StyledNav = styled.nav`
   ${mixins.flexBetween};
@@ -144,7 +142,7 @@ const Link = styled.a`
     color: ${colors.white};
   }
 `;
-const DELTA = 5;
+const DELTA = 20000;
 
 class NavBar extends Component {
   state = {
@@ -219,59 +217,35 @@ class NavBar extends Component {
   };
 
   render() {
-    const { isMounted, menuOpen, scrollDirection } = this.state;
-    const { isHome } = this.props;
-    const timeout = isHome ? loaderDelay : 0;
-    const fadeClass = isHome ? "fade" : "";
-    const fadeDownClass = isHome ? "fadedown" : "";
+    const { menuOpen } = this.state;
 
     return (
-      <StyledContainer scrollDirection={scrollDirection}>
+      <StyledContainer>
         <StyledNav>
-          <TransitionGroup component={null}>
-            {isMounted && (
-              <CSSTransition classNames={fadeClass} timeout={timeout}>
-                <StyledLogo src={IconLogo} tabindex="-1">
-                  <a href="/" aria-label="home">
-                    <img src={IconLogo} width={"42px"} alt="Ayuda NGO" />
-                  </a>
-                </StyledLogo>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
-
-          <TransitionGroup component={null}>
-            {isMounted && (
-              <CSSTransition classNames={fadeClass} timeout={timeout}>
-                <StyledHamburger onClick={this.toggleMenu}>
-                  <StyledHamburgerBox>
-                    <StyledHamburgerInner menuOpen={menuOpen} />
-                  </StyledHamburgerBox>
-                </StyledHamburger>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
+          <Fade>
+            <StyledLogo tabindex="-1">
+              <a href="/" aria-label="home">
+                <img src={IconLogo} width={"42px"} alt="Ayuda NGO" />
+              </a>
+            </StyledLogo>
+          </Fade>
+          <Fade right distance={"20px"}>
+            <StyledHamburger onClick={this.toggleMenu}>
+              <StyledHamburgerBox>
+                <StyledHamburgerInner menuOpen={menuOpen} />
+              </StyledHamburgerBox>
+            </StyledHamburger>
+          </Fade>
 
           <StyledLink>
             <StyledList>
-              <TransitionGroup component={null}>
-                {isMounted &&
-                  navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <CSSTransition
-                      key={i}
-                      classNames={fadeDownClass}
-                      timeout={timeout}
-                    >
-                      <StyledListItem
-                        key={i}
-                        style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}
-                      >
-                        <Link href={url}>{name}</Link>{" "}
-                      </StyledListItem>
-                    </CSSTransition>
-                  ))}
-              </TransitionGroup>
+              {navLinks.map(({ url, name }, i) => (
+                <Fade top delay={200 * i}>
+                  <StyledListItem key={i}>
+                    <Link href={url}>{name}</Link>{" "}
+                  </StyledListItem>
+                </Fade>
+              ))}
             </StyledList>
           </StyledLink>
         </StyledNav>
