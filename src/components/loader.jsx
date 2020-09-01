@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { Fade } from "react-reveal";
-import IconLogo from "../assets/logo.jpg";
+import IconLogo from "../assets/logo.png";
 import { media } from "../styles/styles.jsx";
 import { mixins } from "../styles/styles.jsx";
 import styled from "styled-components";
