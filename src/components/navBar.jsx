@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { media, mixins, theme } from "../styles/styles.jsx";
 
 import { Fade } from "react-reveal";
-import IconLogo from "../assets/logo.webp";
+import IconLogo from "../assets/logo.jpg";
 import Menu from "./menu.jsx";
 import { navLinks } from "../information.js";
 import styled from "styled-components";
