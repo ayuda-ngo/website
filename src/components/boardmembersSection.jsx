@@ -42,7 +42,7 @@ export default function BoardMembersSection() {
           <h1 className="heading p-3 mb-5">{boardMembersSection.title}</h1>
         </Fade>
       </BoardMembersContainer>
-      <Fade bottom delay={500} distance="40px">
+      <Fade>
         <MembersCardDiv>
           {boardMembersSection.boardMembers.map((member) => {
             return <MemberCard key={member.id} cardInfo={member} />;
