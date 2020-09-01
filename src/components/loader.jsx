@@ -22,9 +22,9 @@ const StyledLogo = styled.div`
 `;
 
 const StyledImage = styled.img`
-  width: 150px;
-  ${media.bigDesktop`width: 120px;`};
-  ${media.thone`width: 100px;`};
+  width: 160px;
+  ${media.bigDesktop`width: 180px;`};
+  ${media.thone`width: 120px;`};
 `;
 
 class PageLoader extends Component {

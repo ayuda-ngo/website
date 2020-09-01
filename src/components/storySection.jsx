@@ -12,7 +12,7 @@ const StoryDiv = styled.div`
   padding: 20px 10px;
   width: 98%;
   margin: 0px auto;
-  background-color: ${colors.bg};
+  background-color: none;
 `;
 
 const StoryTitle = styled.div`
@@ -50,7 +50,7 @@ const StoryContainer = styled.div`
   margin-bottom: 20px;
   height: 300px;
   position: relative;
-  background-color: ${colors.cardColor};
+  background-color: rgba(35, 35, 43, 0.8);
   border-radius: ${borderRadius};
 `;
 

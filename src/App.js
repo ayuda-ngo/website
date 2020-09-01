@@ -13,15 +13,17 @@ import IntroductionSection from "./components/introductionSection.jsx";
 import NavBar from "./components/navBar.jsx";
 import PageLoader from "./components/loader.jsx";
 import StorySection from "./components/storySection.jsx";
+import { theme } from "./styles/styles.jsx";
 
 class App extends Component {
   state = {
-    loading: true,
+    loading: false,
   };
 
   componentDidMount() {
     setTimeout(() => {
       this.setState({ loading: false });
+      document.getElementById("body").style.backgroundColor = theme.colors.blue;
     }, 2500);
   }
 

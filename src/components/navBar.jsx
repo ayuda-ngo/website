@@ -135,6 +135,7 @@ const StyledListItem = styled.li`
 const Link = styled.a`
   color: ${colors.white};
   cursor: pointer;
+
   &:focus,
   &:hover {
     outline: none;
@@ -142,8 +143,13 @@ const Link = styled.a`
     color: ${colors.white};
   }
 `;
+
 const DELTA = 20000;
 
+const StyledImage = styled.img`
+  width: 60px;
+  ${media.thone`width: 48px;`};
+`;
 class NavBar extends Component {
   state = {
     isMounted: true,
@@ -225,7 +231,7 @@ class NavBar extends Component {
           <Fade>
             <StyledLogo tabindex="-1">
               <a href="/" aria-label="home">
-                <img src={IconLogo} width={"42px"} alt="Ayuda NGO" />
+                <StyledImage src={IconLogo} alt="Ayuda NGO" />
               </a>
             </StyledLogo>
           </Fade>

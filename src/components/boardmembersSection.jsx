@@ -13,7 +13,7 @@ const BoardMembersContainer = styled.div`
   width: 90%;
   padding: 20px 10px 20px 10px;
   margin: 0px auto;
-  background-color: ${colors.bg};
+  background-color: none;
   font-family: inherit;
 `;
 

@@ -26,7 +26,7 @@ const EventsDiv = styled.div`
   width: 90%;
   padding: 20px 10px 20px 10px;
   margin: 0px auto;
-  background-color: ${colors.bg};
+  background-color: none;
   font-family: inherit;
 `;
 
@@ -169,7 +169,7 @@ const StyledTabContent = styled.div`
     padding-left: 0;
     padding-top: 0;
     height: 500px;
-    background-color: ${colors.cardColor};
+    background-color: rgba(35, 35, 43, 0.8);
     border-radius: 10px;
   `};
 `;
@@ -225,8 +225,7 @@ const EventCardImage = styled.img`
 `;
 
 const EventCardWrapper = styled.div`
-  // border: 2px solid green;
-  background-color: ${colors.cardColor};
+  background-color: rgba(35, 35, 43, 0.8);
   border-radius: 15px;
   color: ${colors.white};
   position: absolute;

@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles/styles.jsx";
 
-const { colors, fontSizes, cardShadow } = theme;
+const { colors, fontSizes } = theme;
 
 const BlogContainer = styled.div`
   border-radius: 0px 40px 0px 0px;
-  box-shadow: ${cardShadow};
+  background-color: rgba(35, 35, 43, 0.8);
+  border: 1px solid black;
   cursor: pointer;
   text-decoration: none;
   margin: 25px;

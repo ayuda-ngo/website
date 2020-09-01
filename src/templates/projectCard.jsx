@@ -3,7 +3,7 @@ import { media, theme } from "../styles/styles.jsx";
 import React from "react";
 import styled from "styled-components";
 
-const { colors, fontSizes, cardShadow, borderRadius } = theme;
+const { colors, fontSizes, borderRadius } = theme;
 
 const ProjectCardContainer = styled.div`
   position: relative;
@@ -12,8 +12,7 @@ const ProjectCardContainer = styled.div`
   width: 350px;
   height: 300px;
   border: 2px solid black;
-  background-color: ${colors.cardColor};
-  box-shadow: ${cardShadow};
+  background-color: rgba(35, 35, 43, 0.8);
   margin: 55px;
   border-radius: ${borderRadius};
 
@@ -50,13 +49,14 @@ const ProjectCardTitle = styled.div`
 `;
 
 const ProjectCardText = styled.div`
+  text-align: left;
   padding: 0 10px 10px 90px;
   font-size: ${fontSizes.smish};
   color: ${colors.white};
 
   ${media.thone`
   padding: 10px;
-  text-align: center;
+  text-align: left;
   font-size: ${fontSizes.sm};
   `};
 `;
@@ -119,7 +119,7 @@ const ProjectButtonWrapper = styled.div`
 
   ${media.thone`
   margin: 20px 0;
-  transform: translate(110%, 275px);
+  transform: translate(60%, 275px);
   `};
 `;
 

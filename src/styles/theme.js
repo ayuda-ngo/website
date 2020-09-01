@@ -4,11 +4,10 @@ export const theme = {
   colors: {
     bg: "#23232b",
     black: "#080808",
-    white: "#f8f8f8",
+    white: "#ffffff",
     grey: "#c4c4c4",
-    heading: "",
-    text: "",
-    accent: "",
+    blue: "#1b82c4",
+    // blue: "#23232b",
     cardColor: "#414242",
   },
 
