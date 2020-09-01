@@ -17,7 +17,7 @@ import { theme } from "./styles/styles.jsx";
 
 class App extends Component {
   state = {
-    loading: false,
+    loading: true,
   };
 
   componentDidMount() {

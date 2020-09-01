@@ -2,12 +2,12 @@
 
 export const theme = {
   colors: {
-    bg: "#23232b",
+    bg: "#03111a",
     black: "#080808",
     white: "#ffffff",
     grey: "#c4c4c4",
-    blue: "#1b82c4",
-    // blue: "#23232b",
+    // blue: "#1b82c4",
+    blue: "#1b82c4", //"#1e3888",
     cardColor: "#414242",
   },
 

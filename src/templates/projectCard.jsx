@@ -12,7 +12,7 @@ const ProjectCardContainer = styled.div`
   width: 350px;
   height: 300px;
   border: 2px solid black;
-  background-color: rgba(35, 35, 43, 0.8);
+  background-color: rgba(3, 17, 26, 0.8);
   margin: 55px;
   border-radius: ${borderRadius};
 

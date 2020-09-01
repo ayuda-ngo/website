@@ -169,7 +169,7 @@ const StyledTabContent = styled.div`
     padding-left: 0;
     padding-top: 0;
     height: 500px;
-    background-color: rgba(35, 35, 43, 0.8);
+    background-color: rgba(3, 17, 26, 0.8);
     border-radius: 10px;
   `};
 `;
@@ -225,7 +225,7 @@ const EventCardImage = styled.img`
 `;
 
 const EventCardWrapper = styled.div`
-  background-color: rgba(35, 35, 43, 0.8);
+  background-color: rgba(3, 17, 26, 0.8);
   border-radius: 15px;
   color: ${colors.white};
   position: absolute;

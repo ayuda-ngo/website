@@ -50,7 +50,7 @@ const StoryContainer = styled.div`
   margin-bottom: 20px;
   height: 300px;
   position: relative;
-  background-color: rgba(35, 35, 43, 0.8);
+  background-color: rgba(3, 17, 26, 0.8);
   border-radius: ${borderRadius};
 `;
 

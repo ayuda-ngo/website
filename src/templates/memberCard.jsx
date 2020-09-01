@@ -5,7 +5,7 @@ import { theme } from "../styles/styles.jsx";
 const { colors, borderRadius } = theme;
 
 const StyledCard = styled.div`
-  background-color: rgba(35, 35, 43, 0.8);
+  background-color: rgba(3, 17, 26, 0.8);
   border: 1px solid black;
   border-radius: ${borderRadius};
   max-width: 250px;
@@ -25,7 +25,7 @@ const MemberOverlay = styled.div`
   opacity: 0;
   position: absolute;
   transition: opacity 0.5s ease-in-out;
-  background-color: rgba(53, 56, 57, 0.7);
+  background-color: rgba(3, 17, 26, 0.6);
 `;
 
 const MemberImageDiv = styled.div`

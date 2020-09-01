@@ -15,8 +15,7 @@ const StyledContainer = styled.header`
   position: fixed;
   top: 0;
   padding: 0px 20px;
-  background-color: ${colors.bg};
-  opacity: 0.8;
+  background-color: rgba(3, 17, 26, 0.8);
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;

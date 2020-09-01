@@ -24,7 +24,7 @@ const ContactDescription = styled.div`
 
 const GetInTouchWrapper = styled(Section)`
   position: relative;
-  background-color: rgba(35, 35, 43, 0.8);
+  background-color: rgba(3, 17, 26, 0.8);
   border-radius: ${borderRadius};
   color: white;
   padding: 25px;

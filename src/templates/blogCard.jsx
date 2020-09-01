@@ -6,7 +6,7 @@ const { colors, fontSizes } = theme;
 
 const BlogContainer = styled.div`
   border-radius: 0px 40px 0px 0px;
-  background-color: rgba(35, 35, 43, 0.8);
+  background-color: rgba(3, 17, 26, 0.8);
   border: 1px solid black;
   cursor: pointer;
   text-decoration: none;
