@@ -15,12 +15,12 @@ const IntroductionSectionWrapper = styled(Section)`
   ${media.thone`
   width: 80%;
   height: unset;
+  margin-top: 100px;
   `};
 `;
 
 const StyledOverline = styled.h1`
   color: ${colors.grey};
-  // color: #e9ff65;
   margin: 0 0 20px 3px;
   font-size: ${fontSizes.md};
   font-family: ${fonts.SFMono};
@@ -29,8 +29,8 @@ const StyledOverline = styled.h1`
   ${media.tablet`font-size: ${fontSizes.smish};`};
 `;
 
-const StyledTitle = styled.h2`
-  font-size: 80px;
+const StyledTitle = styled.h1`
+  font-size: 90px;
   line-height: 1.1;
   margin: 0;
   // color: ${colors.white};
@@ -38,18 +38,18 @@ const StyledTitle = styled.h2`
   ${media.desktop`font-size: 70px;`};
   ${media.tablet`font-size: 60px;`};
   ${media.phablet`font-size: 50px;`};
-  ${media.phone`font-size: 40px;`};
+  ${media.phone`font-size: 50px;`};
 `;
 
 const StyledSubtitle = styled.h3`
+  margin-top: 25px;
   font-size: 60px;
   line-height: 1.1;
   width: 80%;
   color: ${colors.grey};
-  // color: #e9ff65;
   ${media.desktop`font-size: 50px;`};
   ${media.tablet`font-size: 40px;`};
-  ${media.phablet`font-size: 30px;`};
+  ${media.phablet`font-size: 20px;`};
   ${media.phone`font-size: 20px;`};
 `;
 
@@ -57,25 +57,27 @@ const StyledDescription = styled.div`
   margin-top: 25px;
   width: 50%;
   max-width: 500px;
+  font-size: 20px;
   color: ${colors.white};
-  // color: #e9ff65;
   ${media.thone`width: 80%;`};
+  ${media.thone`font-size: 16px;`};
 `;
+
 export default function IntroductionSection() {
   return (
     <IntroductionSectionWrapper>
-      <Fade bottom distance="20px">
+      <Fade distance="20px">
         <StyledOverline>{"Hi, we are"}</StyledOverline>
       </Fade>
       <Fade bottom delay={1000} distance="20px">
         <StyledTitle>{"AYUDA NGO."}</StyledTitle>
       </Fade>
-      <Fade bottom delay={1800} distance="20px">
+      <Fade delay={1800} distance="20px">
         <StyledSubtitle>
           {"We work for the betterment of our world."}
         </StyledSubtitle>
       </Fade>
-      <Fade bottom delay={2000} distance="20px">
+      <Fade delay={2000} distance="10px">
         <StyledDescription>
           {
             "Bring out the change in society by spreading hands to help the unprivileged children and other backward communities."

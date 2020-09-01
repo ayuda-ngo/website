@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 // import EventCard from "../templates/eventCard.jsx";
 
-const { colors, fontSizes, fonts, cardShadow } = theme;
+const { colors, fontSizes, fonts, cardShadow, borderRadius } = theme;
 
 const EventsSectionWrapper = styled(Section)`
   position: relative;
@@ -111,7 +111,7 @@ const StyledHighlight = styled.span`
   background: ${colors.white};
   width: 2px;
   height: ${theme.tabHeight}px;
-  border-radius: ${theme.borderRadius};
+  border-radius: ${borderRadius};
   position: absolute;
   top: 0;
   left: 0;
@@ -216,7 +216,8 @@ const EventCardImage = styled.img`
   height: 250px;
   border-radius: 20px;
 
-  box-shadow: ${cardShadow} ${media.thone`
+  box-shadow: ${cardShadow};
+  ${media.thone`
   border-radius: 10px;
   width: 100%;
   height: inherit;

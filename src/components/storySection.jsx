@@ -5,7 +5,7 @@ import React from "react";
 import { storySection } from "../information.js";
 import styled from "styled-components";
 
-const { colors, fontSizes } = theme;
+const { colors, fontSizes, borderRadius } = theme;
 
 const StoryDiv = styled.div`
   display: block;
@@ -43,7 +43,7 @@ const VideoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: ${borderRadius};
 `;
 
 const StoryContainer = styled.div`
@@ -51,7 +51,7 @@ const StoryContainer = styled.div`
   height: 300px;
   position: relative;
   background-color: ${colors.cardColor};
-  border-radius: 10px;
+  border-radius: ${borderRadius};
 `;
 
 const StoryContainerWrapper = styled(Section)`
@@ -69,7 +69,7 @@ export default function StorySection() {
           </StoryTitle>
         </Fade>
         <div className="row">
-          <div className="col lg-6">
+          <div className="col-lg-6">
             <Fade left duration={600} distance="20px">
               <StoryContainer>
                 <StoryHeading>
@@ -79,7 +79,7 @@ export default function StorySection() {
               </StoryContainer>
             </Fade>
           </div>
-          <div className="col lg-6">
+          <div className="col-lg-6">
             <Fade right duration={600} distance="20px">
               <StoryContainer id="2">
                 <StoryHeading>{storySection.whereAreWeNow.title}</StoryHeading>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import { Fade } from "react-reveal";
 import IconLogo from "../assets/logo.webp";
+import { media } from "../styles/styles.jsx";
 import { mixins } from "../styles/styles.jsx";
 import styled from "styled-components";
 
@@ -9,14 +10,21 @@ const LoaderWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -50px 0px 0px -50px;
+  transform: translate(-50%, -50%);
 `;
 
 const StyledLogo = styled.div`
   ${mixins.flexCenter};
+
   a {
     display: inline;
   }
+`;
+
+const StyledImage = styled.img`
+  width: 150px;
+  ${media.bigDesktop`width: 120px;`};
+  ${media.thone`width: 100px;`};
 `;
 
 class PageLoader extends Component {
@@ -34,7 +42,7 @@ class PageLoader extends Component {
         <Fade opposite when={this.state.show}>
           <StyledLogo>
             <a href="/" aria-label="home">
-              <img src={IconLogo} width={"100px"} alt="Ayuda NGO" />
+              <StyledImage src={IconLogo} alt="Ayuda NGO" />
             </a>
           </StyledLogo>
         </Fade>

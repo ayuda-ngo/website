@@ -115,11 +115,11 @@ const ProjectButtonWrapper = styled.div`
   position: absolute;
   justify-content: flex-end;
   margin: 20px 10px 20px 0;
-  transform: translate(200px, 280px);
+  transform: translate(200px, 265px);
 
   ${media.thone`
   margin: 20px 0;
-  transform: translate(100%, 280px);
+  transform: translate(110%, 275px);
   `};
 `;
 

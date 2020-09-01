@@ -4,7 +4,7 @@ import React from "react";
 import { getInTouchSection } from "../information.js";
 import styled from "styled-components";
 
-const { colors, fontSizes, cardShadow } = theme;
+const { colors, fontSizes, cardShadow, borderRadius } = theme;
 
 const ContactContainer = styled.div`
   width: 90%;
@@ -26,7 +26,7 @@ const GetInTouchWrapper = styled(Section)`
   position: relative;
   background: ${colors.bg};
   box-shadow: ${cardShadow};
-  border-radius: 20px;
+  border-radius: ${borderRadius};
   color: white;
   padding: 25px;
   margin: 50px auto;
