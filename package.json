@@ -1,6 +1,6 @@
 {
   "name": "ayuda-website",
-  "homepage": "https://http://ayudango.org",
+  "homepage": "https://ayudango.org",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
