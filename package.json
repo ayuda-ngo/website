@@ -1,6 +1,6 @@
 {
   "name": "ayuda-website",
-  "homepage": "ayudango.org",
+  "homepage": "https://ngo-ayuda.netlify.app",
   "version": "1.0.0",
   "private": "true",
   "dependencies": {
