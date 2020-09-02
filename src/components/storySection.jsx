@@ -27,16 +27,20 @@ const StoryHeading = styled.h4`
 
 const StoryBody = styled.div`
   text-align: left;
-  font-size: ${fontSizes.sm};
-  padding: 15px;
+  font-size: ${fontSizes.md};
+  padding: 10px;
   margin: 10px;
-  width: content-fit;
+  width: fit-content;
   position: relative;
   text-align: center;
 
   ${media.thone`
-  font-size: ${fontSizes.smish};
-  `};
+font-size: ${fontSizes.md};
+`};
+
+  ${media.tiny`
+font-size: ${fontSizes.smish};
+`};
 `;
 
 const VideoContainer = styled.div`

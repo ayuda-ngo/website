@@ -46,11 +46,11 @@ const BlogText = styled.a`
   }
 `;
 
-export default function BlogCard({ blog }) {
+export default function BlogCard({ cardInfo }) {
   return (
     <BlogContainer>
-      <BlogHeading>{blog.title}</BlogHeading>
-      <BlogText href={blog.url}>{blog.text}</BlogText>
+      <BlogHeading>{cardInfo.title}</BlogHeading>
+      <BlogText href={cardInfo.url}>{cardInfo.text}</BlogText>
     </BlogContainer>
   );
 }

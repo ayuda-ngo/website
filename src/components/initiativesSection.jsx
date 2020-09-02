@@ -37,14 +37,16 @@ export default function InitiativesSection() {
           </div>
         </Fade>
       </InitiativesContainer>
-
-      <Fade bottom distance="40px">
-        <InitiativesBody>
-          {initiativesSection.initiatives.map((initiative) => {
-            return <ProjectCard key={initiative.id} cardInfo={initiative} />;
-          })}
-        </InitiativesBody>
-      </Fade>
+      <InitiativesBody>
+        {initiativesSection.initiatives.map((initiative, i) => {
+          return (
+            <Fade bottom delay={200 * i} distance="20px">
+              <ProjectCard key={initiative.id} cardInfo={initiative} />
+            </Fade>
+          );
+        })}
+        s
+      </InitiativesBody>
     </InitiativesSectionWrapper>
   );
 }

@@ -15,9 +15,10 @@ const IntroductionSectionWrapper = styled(Section)`
   ${media.thone`
   width: 80%;
   height: unset;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 110px ;
+  margin-bottom: 120px;
   `};
+  ${media.phone`margin-bottom: 240px;`};
 `;
 
 const StyledOverline = styled.h1`
@@ -37,9 +38,9 @@ const StyledTitle = styled.h1`
   // color: ${colors.white};
   color: #fec617;
   ${media.desktop`font-size: 70px;`};
-  ${media.tablet`font-size: 60px;`};
-  ${media.phablet`font-size: 50px;`};
+  ${media.tablet`font-size: 65px;`};
   ${media.phone`font-size: 50px;`};
+  ${media.thone`font-size: 60px;`};
 `;
 
 const StyledSubtitle = styled.h3`
@@ -50,7 +51,7 @@ const StyledSubtitle = styled.h3`
   color: ${colors.grey};
   ${media.desktop`font-size: 50px;`};
   ${media.tablet`font-size: 40px;`};
-  ${media.phablet`font-size: 20px;`};
+  ${media.thone`font-size: 30px;`};
   ${media.phone`font-size: 20px;`};
 `;
 

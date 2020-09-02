@@ -42,13 +42,16 @@ export default function BoardMembersSection() {
           <h1 className="heading p-3 mb-5">{boardMembersSection.title}</h1>
         </Fade>
       </BoardMembersContainer>
-      <Fade>
-        <MembersCardDiv>
-          {boardMembersSection.boardMembers.map((member) => {
-            return <MemberCard key={member.id} cardInfo={member} />;
-          })}
-        </MembersCardDiv>
-      </Fade>
+
+      <MembersCardDiv>
+        {boardMembersSection.boardMembers.map((member, i) => {
+          return (
+            <Fade bottom delay={150 * i} distance="20px">
+              <MemberCard key={member.id} cardInfo={member} />
+            </Fade>
+          );
+        })}
+      </MembersCardDiv>
     </BoardMembersSectionWrapper>
   );
 }

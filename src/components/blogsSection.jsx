@@ -50,22 +50,15 @@ export default function BlogSection() {
       </BlogsContainer>
 
       <BlogsMain>
-        <Fade bottom delay={500} distance="40px">
-          <BlogsBody>
-            {blogSection.blogs.map((blog) => {
-              return (
-                <BlogCard
-                  key={blog.id}
-                  blog={{
-                    url: blog.url,
-                    title: blog.title,
-                    text: blog.text,
-                  }}
-                />
-              );
-            })}
-          </BlogsBody>
-        </Fade>
+        <BlogsBody>
+          {blogSection.blogs.map((blog, i) => {
+            return (
+              <Fade bottom delay={150 * i} distance="20px">
+                <BlogCard key={blog.id} cardInfo={blog} />
+              </Fade>
+            );
+          })}
+        </BlogsBody>
       </BlogsMain>
     </BlogSectionWrappper>
   );

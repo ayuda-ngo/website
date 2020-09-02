@@ -22,6 +22,7 @@ const StyledContainer = styled.div`
   display: none;
   ${media.tablet`display: block;`};
 `;
+
 const Sidebar = styled.aside`
   ${mixins.flexCenter};
   flex-direction: column;
@@ -33,7 +34,7 @@ const Sidebar = styled.aside`
   right: 0;
   margin-left: auto;
   font-family: ${fonts.SFMono};
-  // box-shadow: -10px 0px 30px -15px ${colors.white};
+
   ${media.thone`padding: 25px;`};
   ${media.phablet`width: 75vw;`};
   ${media.tiny`padding: 10px;`};
@@ -55,14 +56,14 @@ const NavList = styled.ol`
 `;
 
 const NavListItem = styled.li`
-  margin: 0 auto 20px;
+  margin: 20px auto 20px;
   position: relative;
-  font-size: ${fontSizes.lg};
-  counter-increment: item 1;
+
   ${media.thone`
-    margin: 0 auto 10px;
-    font-size: ${fontSizes.md};
-  `};
+  margin: 0 auto 10px;
+  font-size: ${fontSizes.xl};
+`};
+
   ${media.tiny`font-size: ${fontSizes.md};`};
 `;
 
