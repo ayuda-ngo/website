@@ -39,7 +39,7 @@ const StoryBody = styled.div`
 `};
 
   ${media.phablet`
-    font-size: ${fontSizes.smish};
+    font-size: ${fontSizes.sm};
 `};
 `;
 
