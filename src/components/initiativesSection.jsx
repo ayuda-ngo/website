@@ -40,7 +40,7 @@ export default function InitiativesSection() {
       <InitiativesBody>
         {initiativesSection.initiatives.map((initiative, i) => {
           return (
-            <Fade bottom delay={200 * i} distance="20px">
+            <Fade bottom delay={150 * i} distance="20px">
               <ProjectCard key={initiative.id} cardInfo={initiative} />
             </Fade>
           );

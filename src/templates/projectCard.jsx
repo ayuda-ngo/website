@@ -11,7 +11,7 @@ const ProjectCardContainer = styled.div`
   max-width: 350px;
   width: 350px;
   height: 300px;
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: rgba(3, 17, 26, 0.8);
   margin: 55px;
   border-radius: ${borderRadius};

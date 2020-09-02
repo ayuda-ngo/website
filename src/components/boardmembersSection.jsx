@@ -46,7 +46,7 @@ export default function BoardMembersSection() {
       <MembersCardDiv>
         {boardMembersSection.boardMembers.map((member, i) => {
           return (
-            <Fade bottom delay={150 * i} distance="20px">
+            <Fade bottom delay={80 * i} distance="20px">
               <MemberCard key={member.id} cardInfo={member} />
             </Fade>
           );
