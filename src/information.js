@@ -276,7 +276,7 @@ const initiativesSection = {
       id: 5,
       title: "PROJECT SUDHAAR",
       text:
-        "Here we conduct medical health camps for the underprivileged community like the mentally retarded patients, orphans or the elderly crowd. This is inclusive of eye check-up drives and overall physical check-ups to ensure a healthy and a safe lifestyle.",
+        "Here we conduct medical health camps for the underprivileged community like patients with intellectual disabilities, orphans or the elderly crowd. This is inclusive of eye check-up drives and overall physical check-ups to ensure a healthy and a safe lifestyle.",
       image: require("./assets/images/sudhaar.png"),
       link: "https://www.google.com",
     },
