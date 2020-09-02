@@ -35,11 +35,11 @@ const StoryBody = styled.div`
   text-align: center;
 
   ${media.thone`
-font-size: ${fontSizes.md};
+    font-size: ${fontSizes.md};
 `};
 
-  ${media.tiny`
-font-size: ${fontSizes.smish};
+  ${media.phone`
+    font-size: ${fontSizes.smish};
 `};
 `;
 

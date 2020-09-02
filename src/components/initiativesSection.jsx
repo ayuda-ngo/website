@@ -45,7 +45,6 @@ export default function InitiativesSection() {
             </Fade>
           );
         })}
-        s
       </InitiativesBody>
     </InitiativesSectionWrapper>
   );
