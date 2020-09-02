@@ -19,14 +19,15 @@ const EventsSectionWrapper = styled(Section)`
 
 const EventsTitle = styled.div`
   padding: 3px;
+  width: 100%;
 `;
 
 const EventsDiv = styled.div`
   display: flex;
   width: 90%;
-  padding: 20px 10px 20px 10px;
+  padding: 20px 10px;
   margin: 0px auto;
-  background-color: none;
+  background: none;
   font-family: inherit;
 `;
 
@@ -275,11 +276,13 @@ export default function EventsSection() {
   return (
     <EventsSectionWrapper id="events">
       <EventsDiv>
-        <Fade bottom distance="40px">
-          <EventsTitle>
-            <h1 className="heading">{eventsSection.title}</h1>
-          </EventsTitle>
-        </Fade>
+        <EventsTitle>
+          <Fade bottom distance="40px">
+            <div className="events-header">
+              <h1 className="heading">{eventsSection.title}</h1>
+            </div>
+          </Fade>
+        </EventsTitle>
       </EventsDiv>
 
       <EventsContainer>

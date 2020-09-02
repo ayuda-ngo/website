@@ -11,7 +11,7 @@ const { colors } = theme;
 const BoardMembersContainer = styled.div`
   display: flex;
   width: 90%;
-  padding: 20px 10px 20px 10px;
+  padding: 20px 10px;
   margin: 0px auto;
   background-color: none;
   font-family: inherit;
@@ -39,7 +39,9 @@ export default function BoardMembersSection() {
     <BoardMembersSectionWrapper id="members">
       <BoardMembersContainer>
         <Fade bottom distance="40px">
-          <h1 className="heading p-3 mb-5">{boardMembersSection.title}</h1>
+          <div className="boardmembers-header p-3 w-100">
+            <h1 className="heading">{boardMembersSection.title}</h1>
+          </div>
         </Fade>
       </BoardMembersContainer>
 

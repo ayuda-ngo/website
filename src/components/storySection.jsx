@@ -36,11 +36,15 @@ const StoryBody = styled.div`
 
   ${media.thone`
     font-size: ${fontSizes.md};
-`};
+  `};
 
   ${media.phablet`
     font-size: ${fontSizes.sm};
-`};
+  `};
+
+  ${media.tiny`
+    font-size: ${fontSizes.smish};
+  `};
 `;
 
 const VideoContainer = styled.div`

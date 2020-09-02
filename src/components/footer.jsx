@@ -12,13 +12,13 @@ const FooterWrapper = styled(Section)`
 `;
 
 const Copyright = styled.div`
-  font-size: ${fontSizes.xs};
+  font-size: ${fontSizes.smish};
 `;
 
 export default function Footer() {
   return (
     <FooterWrapper>
-      <Copyright>{"© Copyright 2020 | Ayuda NGO VIT"}</Copyright>
+      <Copyright>{"© Copyright 2020 | NGO Ayuda VIT"}</Copyright>
     </FooterWrapper>
   );
 }

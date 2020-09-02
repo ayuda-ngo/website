@@ -22,10 +22,10 @@ const IntroductionSectionWrapper = styled(Section)`
 `;
 
 const StyledOverline = styled.h1`
-  color: ${colors.grey};
+  color: ${colors.white};
   margin: 0 0 20px 3px;
   font-size: ${fontSizes.md};
-  font-family: ${fonts.SFMono};
+  font-family: ${fonts.Capriola};
   font-weight: normal;
   ${media.desktop`font-size: ${fontSizes.sm};`};
   ${media.tablet`font-size: ${fontSizes.smish};`};
@@ -35,6 +35,7 @@ const StyledTitle = styled.h1`
   font-size: 90px;
   line-height: 1.1;
   margin: 0;
+  font-family: ${fonts.Capriola};
   // color: ${colors.white};
   color: #fec617;
   ${media.desktop`font-size: 70px;`};
@@ -71,7 +72,7 @@ export default function IntroductionSection() {
       <Fade distance="20px">
         <StyledOverline>{"Hi, we are"}</StyledOverline>
       </Fade>
-      <Fade bottom delay={1000} distance="20px">
+      <Fade bottom delay={800} distance="20px">
         <StyledTitle>{"AYUDA NGO."}</StyledTitle>
       </Fade>
       <Fade delay={1800} distance="20px">

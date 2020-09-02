@@ -33,7 +33,7 @@ const Sidebar = styled.aside`
   position: relative;
   right: 0;
   margin-left: auto;
-  font-family: ${fonts.SFMono};
+  font-family: ${fonts.Capriola};
 
   ${media.thone`padding: 25px;`};
   ${media.phablet`width: 75vw;`};
