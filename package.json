@@ -1,8 +1,8 @@
 {
-  "homepage": "ayudango.org",
   "name": "ayuda-website",
+  "homepage": "ayudango.org",
   "version": "1.0.0",
-  "private": true,
+  "private": "true",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
