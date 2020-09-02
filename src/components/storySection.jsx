@@ -38,7 +38,7 @@ const StoryBody = styled.div`
     font-size: ${fontSizes.md};
 `};
 
-  ${media.phone`
+  ${media.phablet`
     font-size: ${fontSizes.smish};
 `};
 `;
