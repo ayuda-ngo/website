@@ -41,7 +41,7 @@ export const theme = {
   radius: 3,
 
   cardShadow:
-    "-20px -20px 50px rgba(255, 255, 255, 0.3), 20px 20px 50px rgba(255, 255, 255, 0.3);",
+    "-10px -10px 35px rgba(255, 255, 255, 0.3), 10px 10px 35px rgba(255, 255, 255, 0.3);",
 
   hamburgerWidth: 30,
   hamBefore: `top 0.1s ease-in 0.25s, opacity 0.1s ease-in`,
