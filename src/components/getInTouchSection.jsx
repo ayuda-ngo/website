@@ -4,13 +4,12 @@ import React from "react";
 import { getInTouchSection } from "../information.js";
 import styled from "styled-components";
 
-const { colors, fontSizes, borderRadius } = theme;
+const { colors, fontSizes, borderRadius, cardShadow } = theme;
 
 const ContactContainer = styled.div`
   width: 90%;
   padding: 20px 10px 20px 10px;
   margin: 0px auto;
-
   font-family: inherit;
   justify-content: center;
 `;
@@ -26,10 +25,11 @@ const GetInTouchWrapper = styled(Section)`
   position: relative;
   background-color: rgba(3, 17, 26, 0.8);
   border-radius: ${borderRadius};
-  color: white;
+  box-shadow: ${cardShadow};
+  color: ${colors.white};
   padding: 25px;
   margin: 50px auto;
-  max-width: 94%;
+  max-width: 90%;
 
   ${media.tablet`
     border-radius: 0;

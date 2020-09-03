@@ -6,8 +6,7 @@ export const theme = {
     black: "#080808",
     white: "#ffffff",
     grey: "#c4c4c4",
-    // blue: "#1b82c4",
-    blue: "#1b82c4", //"#1e3888",
+    blue: "#001122",
     cardColor: "#414242",
   },
 
@@ -42,7 +41,7 @@ export const theme = {
   radius: 3,
 
   cardShadow:
-    "-25px -25px 50px rgba(0, 0, 0, 0.3), 25px 25px 50px rgba(0, 0, 0, 0.3);",
+    "-20px -20px 50px rgba(255, 255, 255, 0.3), 20px 20px 50px rgba(255, 255, 255, 0.3);",
 
   hamburgerWidth: 30,
   hamBefore: `top 0.1s ease-in 0.25s, opacity 0.1s ease-in`,

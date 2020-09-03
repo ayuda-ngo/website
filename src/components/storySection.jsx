@@ -5,7 +5,7 @@ import React from "react";
 import { storySection } from "../information.js";
 import styled from "styled-components";
 
-const { colors, fontSizes, borderRadius } = theme;
+const { colors, fontSizes, borderRadius, cardShadow } = theme;
 
 const StoryDiv = styled.div`
   display: block;
@@ -60,6 +60,7 @@ const StoryContainer = styled.div`
   position: relative;
   background-color: rgba(3, 17, 26, 0.8);
   border-radius: ${borderRadius};
+  box-shadow: ${cardShadow};
 `;
 
 const StoryContainerWrapper = styled(Section)`
