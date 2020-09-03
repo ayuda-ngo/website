@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles/styles.jsx";
 
-const { colors, fontSizes } = theme;
+const { colors, fontSizes, cardShadow } = theme;
 
 const BlogContainer = styled.div`
   border-radius: 0px 40px 0px 0px;
@@ -12,6 +12,7 @@ const BlogContainer = styled.div`
   text-decoration: none;
   margin: 25px;
   max-width: 220px;
+  box-shadow: ${cardShadow};
 `;
 
 const BlogHeading = styled.div`

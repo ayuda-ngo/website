@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles/styles.jsx";
 
-const { colors, borderRadius } = theme;
+const { colors, borderRadius, cardShadow } = theme;
 
 const StyledCard = styled.div`
   background-color: rgba(3, 17, 26, 0.8);
   border: 1px solid black;
   border-radius: ${borderRadius};
+  box-shadow: ${cardShadow};
   max-width: 250px;
   width: 250px;
   height: 340px;

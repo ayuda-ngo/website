@@ -246,6 +246,7 @@ const EventCardWrapper = styled.div`
   width: 100%;
   height: inherit;
   opacity: 1;
+  box-shadow: ${cardShadow};
 `};
 `;
 

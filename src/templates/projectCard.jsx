@@ -3,7 +3,7 @@ import { media, theme } from "../styles/styles.jsx";
 import React from "react";
 import styled from "styled-components";
 
-const { colors, fontSizes, borderRadius } = theme;
+const { colors, fontSizes, borderRadius, cardShadow } = theme;
 
 const ProjectCardContainer = styled.div`
   position: relative;
@@ -15,6 +15,7 @@ const ProjectCardContainer = styled.div`
   background-color: rgba(3, 17, 26, 0.8);
   margin: 55px;
   border-radius: ${borderRadius};
+  box-shadow: ${cardShadow};
 
   ${media.thone`
   margin: 35px;

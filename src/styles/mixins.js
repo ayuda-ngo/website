@@ -116,7 +116,7 @@ export const mixins = {
     }
 
     ::-webkit-scrollbar-track {
-      background: ${colors.bg};
+      background: ${colors.blue};
     }
 
     ::-webkit-scrollbar-thumb {
