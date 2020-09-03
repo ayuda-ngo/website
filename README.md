@@ -1,5 +1,7 @@
 # AYUDA NGO
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e123168b-5db3-4b3b-a539-2711ed2e416b/deploy-status)](https://app.netlify.com/sites/ngo-ayuda/deploys)
+
 This is the website for [Ayuda NGO](https://ayuda-ngo.github.io/ayuda-website/).
 
 It is a Non-Government Enterprise which aims at bringing different sections of the society together to work towards common goal of collective development.
