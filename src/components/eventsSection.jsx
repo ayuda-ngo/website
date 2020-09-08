@@ -231,6 +231,7 @@ const EventCardWrapper = styled.div`
   color: ${colors.white};
   position: absolute;
   width: 45%;
+  height: 220px;
   transform: translate(100%, 90px);
 
   ${media.desktop`
@@ -288,148 +289,47 @@ export default function EventsSection() {
 
       <EventsContainer>
         <StyledTabList role="tablist" aria-label="Events tabs">
-          <li key={0}>
-            <StyledTabButton
-              isActive={activeTabId === 0}
-              onClick={() => setActiveTabId(0)}
-              ref={(el) => (tabs.current[0] = el)}
-              id={`tab-${0}`}
-              role="tab"
-              aria-selected={activeTabId === 0 ? true : false}
-              aria-controls={`panel-${0}`}
-              tabIndex={activeTabId === 0 ? "0" : "-1"}
-            >
-              <span>{eventsSection.events[0].name}</span>
-            </StyledTabButton>
-          </li>
-          <li key={1}>
-            <StyledTabButton
-              isActive={activeTabId === 1}
-              onClick={() => setActiveTabId(1)}
-              ref={(el) => (tabs.current[1] = el)}
-              id={`tab-${1}`}
-              role="tab"
-              aria-selected={activeTabId === 1 ? true : false}
-              aria-controls={`panel-${1}`}
-              tabIndex={activeTabId === 1 ? "0" : "-1"}
-            >
-              <span>{eventsSection.events[1].name}</span>
-            </StyledTabButton>
-          </li>
-          <li key={2}>
-            <StyledTabButton
-              isActive={activeTabId === 2}
-              onClick={() => setActiveTabId(2)}
-              ref={(el) => (tabs.current[2] = el)}
-              id={`tab-${2}`}
-              role="tab"
-              aria-selected={activeTabId === 2 ? true : false}
-              aria-controls={`panel-${2}`}
-              tabIndex={activeTabId === 2 ? "0" : "-1"}
-            >
-              <span>{eventsSection.events[2].name}</span>
-            </StyledTabButton>
-          </li>
-          <li key={3}>
-            <StyledTabButton
-              isActive={activeTabId === 3}
-              onClick={() => setActiveTabId(3)}
-              ref={(el) => (tabs.current[3] = el)}
-              id={`tab-${3}`}
-              role="tab"
-              aria-selected={activeTabId === 3 ? true : false}
-              aria-controls={`panel-${3}`}
-              tabIndex={activeTabId === 3 ? "0" : "-1"}
-            >
-              <span>{eventsSection.events[3].name}</span>
-            </StyledTabButton>
-          </li>
+          {eventsSection.events.map((event, i) => {
+            return (
+              <li key={i}>
+                <StyledTabButton
+                  isActive={activeTabId === i}
+                  onClick={() => setActiveTabId(i)}
+                  ref={(el) => (tabs.current[i] = el)}
+                  id={`tab-${i}`}
+                  role="tab"
+                  aria-selected={activeTabId === i ? true : false}
+                  aria-controls={`panel-${i}`}
+                  tabIndex={activeTabId === i ? "0" : "-1"}
+                >
+                  <span>{event.name}</span>
+                </StyledTabButton>
+              </li>
+            );
+          })}
           <StyledHighlight activeTabId={activeTabId} />
         </StyledTabList>
-
-        <StyledTabContent
-          key={0}
-          isActive={activeTabId === 0}
-          id={`panel-${0}`}
-          role="tabpanel"
-          aria-labelledby={`tab-${0}`}
-          tabIndex={activeTabId === 0 ? "0" : "-1"}
-          hidden={activeTabId !== 0}
-        >
-          <EventCardWrapper>
-            <Fade>
-              <EventHeading>{eventsSection.events[0].name}</EventHeading>
-              <EventText>{eventsSection.events[0].text}</EventText>
-            </Fade>
-          </EventCardWrapper>
-
-          <EventCardImageWrapper>
-            <EventCardImage
-              alt={eventsSection.events[0].name}
-              src={eventsSection.events[0].image}
-            />
-          </EventCardImageWrapper>
-        </StyledTabContent>
-        <StyledTabContent
-          key={1}
-          isActive={activeTabId === 1}
-          id={`panel-${1}`}
-          role="tabpanel"
-          aria-labelledby={`tab-${1}`}
-          tabIndex={activeTabId === 1 ? "0" : "-1"}
-          hidden={activeTabId !== 1}
-        >
-          <EventCardWrapper>
-            <EventHeading>{eventsSection.events[1].name}</EventHeading>
-            <EventText>{eventsSection.events[1].text}</EventText>
-          </EventCardWrapper>
-          <EventCardImageWrapper>
-            <EventCardImage
-              alt={eventsSection.events[1].name}
-              src={eventsSection.events[1].image}
-            />
-          </EventCardImageWrapper>
-        </StyledTabContent>
-        <StyledTabContent
-          key={2}
-          isActive={activeTabId === 2}
-          id={`panel-${2}`}
-          role="tabpanel"
-          aria-labelledby={`tab-${2}`}
-          tabIndex={activeTabId === 2 ? "0" : "-1"}
-          hidden={activeTabId !== 2}
-        >
-          <EventCardWrapper>
-            <EventHeading>{eventsSection.events[2].name}</EventHeading>
-            <EventText>{eventsSection.events[2].text}</EventText>
-          </EventCardWrapper>
-          <EventCardImageWrapper>
-            <EventCardImage
-              alt={eventsSection.events[2].name}
-              src={eventsSection.events[2].image}
-            />
-          </EventCardImageWrapper>
-        </StyledTabContent>
-        <StyledTabContent
-          key={3}
-          isActive={activeTabId === 3}
-          id={`panel-${3}`}
-          role="tabpanel"
-          aria-labelledby={`tab-${3}`}
-          tabIndex={activeTabId === 3 ? "0" : "-1"}
-          hidden={activeTabId !== 3}
-        >
-          <EventCardWrapper>
-            <EventHeading>{eventsSection.events[3].name}</EventHeading>
-            <EventText>{eventsSection.events[3].text}</EventText>
-          </EventCardWrapper>
-          <EventCardImageWrapper>
-            <EventCardImage
-              alt={eventsSection.events[3].name}
-              src={eventsSection.events[3].image}
-            />
-          </EventCardImageWrapper>
-        </StyledTabContent>
+        {eventsSection.events.map((event, i) => {
+          return (
+            <StyledTabContent
+              key={i}
+              isActive={activeTabId === i}
+              id={`panel-${i}`}
+              role="tabpanel"
+              aria-labelledby={`tab-${i}`}
+              tabIndex={activeTabId === i ? "0" : "-1"}
+              hidden={activeTabId !== i}
+            >
+              <EventCardWrapper>
+                <EventHeading>{event.heading}</EventHeading>
+                <EventText>{event.text}</EventText>
+              </EventCardWrapper>
+              <EventCardImageWrapper>
+                <EventCardImage alt={event.heading} src={event.image} />
+              </EventCardImageWrapper>
+            </StyledTabContent>
+          );
+        })}
       </EventsContainer>
     </EventsSectionWrapper>
   );

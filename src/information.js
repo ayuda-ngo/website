@@ -71,14 +71,6 @@ const blogSection = {
       text:
         "Every year, on July 11, World Population Day is observed by the UN with the primary narrative being to promulgate...",
     },
-    {
-      id: 4,
-      url:
-        "https://medium.com/@ngoayuda/where-healing-comes-from-heart-4991e82ea075",
-      title: "WHERE HEALING COMES FROM HEART",
-      text:
-        "In this current situation, the world requires a definite energy to shatter the negative forces ...",
-    },
   ],
 };
 
@@ -198,7 +190,7 @@ const storySection = {
   },
   video: {
     title: "About Ayuda",
-    src: "",
+    src: require("./assets/About_AYUDA.webm"),
     // require("./assets/About_AYUDA.webm")
   },
 };
@@ -246,7 +238,7 @@ const initiativesSection = {
       text:
         "This is an initiative to augment the green cover in the areas where the vegetation is less. In times of increasing urban expansion and drastic decline in foliage, this project provides a way to restore the flora of surrounding areas.",
       image: require("./assets/images/go-green.png"),
-      link: "https://www.google.com",
+      link: "https://medium.com/series/46e8ab47fa44",
     },
     {
       id: 2,
@@ -270,7 +262,7 @@ const initiativesSection = {
       text:
         "This is an ongoing effort made to provide for the needy by effective means. We collect old clothes, unused stationery items and other daily essential items from our students itself, by setting up donation boxes in our hostels where people can drop item",
       image: require("./assets/images/nirman.png"),
-      link: "https://www.google.com",
+      link: "https://medium.com/series/fb1492a32180",
     },
     {
       id: 5,
@@ -278,7 +270,7 @@ const initiativesSection = {
       text:
         "Here we conduct medical health camps for the underprivileged community like patients with intellectual disabilities, orphans or the elderly crowd. This is inclusive of eye check-up drives and overall physical check-ups to ensure a healthy and a safe lifestyle.",
       image: require("./assets/images/sudhaar.png"),
-      link: "https://www.google.com",
+      link: "https://medium.com/series/ccf401c07ae",
     },
   ],
 };
@@ -291,33 +283,41 @@ const eventsSection = {
     {
       id: 1,
       name: "Event 1",
-      heading: "Header 1",
+      heading: "Peace Carnival",
       text:
-        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Again, this is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer",
+        " Ayuda conducted a fun event to make a Sunday evening exciting by organising a polaroid booth, a photo booth, and games such as: spin-the-wheel, musical chairs, and much more.",
       image: require("./assets/black16.jpg"),
     },
     {
       id: 2,
       name: "Event 2",
-      heading: "Header 2",
+      heading: "Social Entrepreneurship",
       text:
-        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Again, this is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer",
+        "Ayuda’s flagship event that encourages students to pitch their start-up idea along with a budget plan. The start-up idea focuses on the social impact on people in any part of India.",
       image: require("./assets/black16.jpg"),
     },
     {
       id: 3,
       name: "Event 3",
-      heading: "Header 3",
+      heading: "Craftsmen",
       text:
-        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Again, this is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer",
+        "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art",
       image: require("./assets/black16.jpg"),
     },
     {
       id: 4,
       name: "Event 4",
-      heading: "Header 4",
+      heading: "Against Domestic Violence",
       text:
-        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Again, this is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer",
+        "Prof. Dr. Rupa Shaha and Ayuda conducted an interactive session on Instagram live on International Day against Sexual Violence. The session encompassed topics such as child marriage, dowry, domestic abuse and much more.",
+      image: require("./assets/black16.jpg"),
+    },
+    {
+      id: 5,
+      name: "Event 5",
+      heading: "Photography Day",
+      text:
+        "Ayuda conducted an event called ‘ Life through your lens ’ where students exhibited their photography skills by capturing abstract shots or clips.",
       image: require("./assets/black16.jpg"),
     },
   ],
