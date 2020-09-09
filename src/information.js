@@ -195,26 +195,6 @@ const storySection = {
   },
 };
 
-/* Carousel Section */
-
-const carouselSection = [
-  {
-    id: 1,
-    src: require("./assets/img1-carousel.svg"),
-    alt: "First slide",
-  },
-  {
-    id: 2,
-    src: require("./assets/img2-carousel.svg"),
-    alt: "Third slide",
-  },
-  {
-    id: 3,
-    src: require("./assets/img3-carousel.svg"),
-    alt: "Third slide",
-  },
-];
-
 /* Get In Touch Section */
 
 const getInTouchSection = {
@@ -254,7 +234,7 @@ const initiativesSection = {
       text:
         "As cultural and extra-curricular activities are a crucial part of a person’s life, we organise sporting events, dance and music competitions, dress-up games, and story-telling sessions for the orphans and the old age crowd as a means to do something out of the ordinary.",
       image: require("./assets/images/muskaan.png"),
-      link: "https://www.google.com",
+      link: "https://medium.com/series/48c090b2a22f",
     },
     {
       id: 4,
@@ -329,7 +309,6 @@ export {
   blogSection,
   boardMembersSection,
   storySection,
-  carouselSection,
   getInTouchSection,
   initiativesSection,
   eventsSection,
