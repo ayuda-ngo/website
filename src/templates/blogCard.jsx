@@ -25,7 +25,6 @@ const BlogHeading = styled.div`
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  background-color: rgba(80, 80, 80, 0.45);
 `;
 
 const BlogText = styled.a`
