@@ -266,7 +266,7 @@ const eventsSection = {
       heading: "Peace Carnival",
       text:
         " Ayuda conducted a fun event to make a Sunday evening exciting by organising a polaroid booth, a photo booth, and games such as: spin-the-wheel, musical chairs, and much more.",
-      image: require("./assets/black16.jpg"),
+      image: require("./assets/events/peace.jpg"),
     },
     {
       id: 2,
@@ -274,7 +274,7 @@ const eventsSection = {
       heading: "Social Entrepreneurship",
       text:
         "Ayuda’s flagship event that encourages students to pitch their start-up idea along with a budget plan. The start-up idea focuses on the social impact on people in any part of India.",
-      image: require("./assets/black16.jpg"),
+      image: require("./assets/events/social.jpg"),
     },
     {
       id: 3,
@@ -282,14 +282,14 @@ const eventsSection = {
       heading: "Craftsmen",
       text:
         "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art",
-      image: require("./assets/black16.jpg"),
+      image: require("./assets/events/craftsman.jpg"),
     },
     {
       id: 4,
       name: "Event 4",
-      heading: "Against Domestic Violence",
+      heading: "Mind Talk",
       text:
-        "Prof. Dr. Rupa Shaha and Ayuda conducted an interactive session on Instagram live on International Day against Sexual Violence. The session encompassed topics such as child marriage, dowry, domestic abuse and much more.",
+        'Sometimes all you need is for someone to just be there which can make all the difference. A live session "Mind talk" with Ann Zachariah, a counsellor, created an awareness amongst us leaving a major takeaway that all of us will remember and encorporate in our lives.',
       image: require("./assets/black16.jpg"),
     },
     {
@@ -298,7 +298,7 @@ const eventsSection = {
       heading: "Photography Day",
       text:
         "Ayuda conducted an event called ‘ Life through your lens ’ where students exhibited their photography skills by capturing abstract shots or clips.",
-      image: require("./assets/black16.jpg"),
+      image: require("./assets/events/photography.jpg"),
     },
   ],
 };

@@ -201,10 +201,6 @@ const EventCardImageWrapper = styled.div`
   width: 100%;
   // border: 2px solid red;
 
-  ${media.desktop`
-  width: 90%;
-  `};
-
   ${media.thone`
     width: 100%;
     height: inherit;
@@ -214,7 +210,8 @@ const EventCardImageWrapper = styled.div`
 `;
 
 const EventCardImage = styled.img`
-  height: 250px;
+  height: 280px;
+  width: 80%;
   border-radius: 20px;
 
   box-shadow: ${cardShadow};
