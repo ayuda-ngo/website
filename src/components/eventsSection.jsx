@@ -223,8 +223,8 @@ const EventCardImage = styled.img`
 `;
 
 const EventCardWrapper = styled.div`
-  background-color: rgba(3, 17, 26, 0.8);
-  border-radius: 15px;
+  background-color: rgba(3, 17, 26, 0.95);
+  border-radius: ${borderRadius};
   color: ${colors.white};
   position: absolute;
   width: 45%;

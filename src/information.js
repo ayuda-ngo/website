@@ -71,6 +71,14 @@ const blogSection = {
       text:
         "Every year, on July 11, World Population Day is observed by the UN with the primary narrative being to promulgate...",
     },
+    {
+      id: 4,
+      url:
+        "https://medium.com/@ngoayuda/our-education-under-attack-a4ab134ab0a9://medium.com/@ngoayuda/the-predicament-of-rising-population-97653858c8a",
+      title: "Our Education under attack.",
+      text:
+        "The morning of October 9, 2012, 15-year-old Malala Yousafzai had been shot by the Taliban on her way home from school...",
+    },
   ],
 };
 
@@ -191,6 +199,7 @@ const storySection = {
   video: {
     title: "About Ayuda",
     src: require("./assets/About_AYUDA.webm"),
+    light: require("./assets/About_AYUDA_light.jpg"),
     // require("./assets/About_AYUDA.webm")
   },
 };
@@ -279,7 +288,7 @@ const eventsSection = {
     {
       id: 3,
       name: "Event 3",
-      heading: "Craftsmen",
+      heading: "Craftsmen.",
       text:
         "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art",
       image: require("./assets/events/craftsman.jpg"),

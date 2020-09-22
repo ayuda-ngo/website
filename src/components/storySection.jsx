@@ -2,6 +2,7 @@ import { Section, media, theme } from "../styles/styles.jsx";
 
 import { Fade } from "react-reveal";
 import React from "react";
+import ReactPlayer from "react-player/lazy";
 import { storySection } from "../information.js";
 import styled from "styled-components";
 
@@ -52,6 +53,13 @@ const VideoContainer = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: ${borderRadius};
+  box-shadow: ${cardShadow};
+`;
+
+const StyledReactPlayer = styled(ReactPlayer)`
+  ${media.thone`
+    height: 360px !important;
+  `};
 `;
 
 const StoryContainer = styled.div`
@@ -98,14 +106,18 @@ export default function StorySection() {
           </div>
         </div>
         <Fade bottom distance="10px">
-          <VideoContainer className="embed-responsive embed-responsive-16by9 ">
-            <video
+          <VideoContainer className="embed-responsive embed-responsive-16by9">
+            <StyledReactPlayer
+              className="react-player"
               title={storySection.video.title}
-              controls="controls"
+              light={storySection.video.light}
+              width="100%"
+              height="540px"
+              playing
+              url={storySection.video.src}
+              controls
               preload="metadata"
-            >
-              <source type="video/webm" src={storySection.video.src} />
-            </video>
+            />
           </VideoContainer>
         </Fade>
       </StoryDiv>
