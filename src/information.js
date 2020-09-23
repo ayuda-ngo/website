@@ -299,7 +299,7 @@ const eventsSection = {
       heading: "Mind Talk",
       text:
         'Sometimes all you need is for someone to just be there which can make all the difference. A live session "Mind talk" with Ann Zachariah, a counsellor, created an awareness amongst us leaving a major takeaway that all of us will remember and encorporate in our lives.',
-      image: require("./assets/black16.jpg"),
+      image: require("./assets/events/mind-talks.jpg"),
     },
     {
       id: 5,
