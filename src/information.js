@@ -235,7 +235,7 @@ const initiativesSection = {
       text:
         "Our student volunteers go to schools in Vellore and teach students using creative methods. We provide more resources for their academic and holistic development. The resources usually includes fun games with an academic approach, group discussions and much more.",
       image: require("./assets/images/gyaan.png"),
-      link: "https://www.google.com",
+      link: "https://medium.com/series/40893625143b",
     },
     {
       id: 3,
