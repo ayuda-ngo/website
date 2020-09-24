@@ -121,6 +121,7 @@ const ProjectButtonWrapper = styled.div`
   ${media.thone`
   margin: 20px 0;
   transform: translate(60%, 275px);
+  z-index: 1000;
   `};
 `;
 
