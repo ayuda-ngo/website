@@ -274,7 +274,7 @@ const eventsSection = {
       name: "Event 1",
       heading: "Peace Carnival",
       text:
-        " Ayuda conducted a fun event to make a Sunday evening exciting by organising a polaroid booth, a photo booth, and games such as: spin-the-wheel, musical chairs, and much more.",
+        "Ayuda conducts a fun event to make a Sunday evening exciting by putting up plays on spreading humanity, organising a polaroid booth, a photo booth, and games such as: spin-the-wheel, musical chairs, and much more.",
       image: require("./assets/events/peace.jpg"),
     },
     {
@@ -288,9 +288,9 @@ const eventsSection = {
     {
       id: 3,
       name: "Event 3",
-      heading: "Craftsmen.",
+      heading: "Craftsmen",
       text:
-        "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art",
+        "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art.",
       image: require("./assets/events/craftsman.jpg"),
     },
     {
@@ -306,7 +306,7 @@ const eventsSection = {
       name: "Event 5",
       heading: "Christmas",
       text:
-        "We often visit a care-taking facility for needy children named Nambikai Illam.Christmas'19 we had a drawing competition for the kids and also fun with Santa giving away candies and gifts. We learned the importance of life’s little things we take for granted from these children, whenever we'd receive a smile from these children, it fills our hearts with happiness.",
+        "We often visit a care-taking facility for needy children named Nambikai Illam. Christmas'19 we had a drawing competition for the kids and also fun with Santa giving away candies and gifts. We learned the importance of life’s little things we take for granted from these children, whenever we'd receive a smile from these children, it fills our hearts with happiness.",
       image: require("./assets/events/christmas.jpg"),
     },
   ],
