@@ -74,8 +74,7 @@ const blogSection = {
     {
       id: 4,
       url:
-        "https://medium.com/@ngoayuda/our-education-under-attack-a4ab134ab0a9://medium.com/@ngoayuda/the-predicament-of-rising-population-97653858c8a",
-      title: "Our Education under attack.",
+        "https://medium.com/@ngoayuda/our-education-under-attack-a4ab134ab0a9",
       text:
         "The morning of October 9, 2012, 15-year-old Malala Yousafzai had been shot by the Taliban on her way home from school...",
     },
@@ -304,10 +303,10 @@ const eventsSection = {
     {
       id: 5,
       name: "Event 5",
-      heading: "Photography Day",
+      heading: "Christmas",
       text:
-        "Ayuda conducted an event called ‘ Life through your lens ’ where students exhibited their photography skills by capturing abstract shots or clips.",
-      image: require("./assets/events/photography.jpg"),
+        "We often visit a care-taking facility for needy children named Nambikai Illam.Christmas'19 we had a drawing competition for the kids and also fun with Santa giving away candies and gifts. We learned the importance of life’s little things we take for granted from these children, whenever we'd receive a smile from these children, it fills our hearts with happiness.",
+      image: require("./assets/events/christmas.jpg"),
     },
   ],
 };
