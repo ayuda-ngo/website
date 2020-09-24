@@ -75,6 +75,7 @@ const blogSection = {
       id: 4,
       url:
         "https://medium.com/@ngoayuda/our-education-under-attack-a4ab134ab0a9",
+      title: "Our Education under attack.",
       text:
         "The morning of October 9, 2012, 15-year-old Malala Yousafzai had been shot by the Taliban on her way home from school...",
     },
