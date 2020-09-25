@@ -57,11 +57,10 @@ const blogSection = {
     },
     {
       id: 2,
-      url:
-        "https://medium.com/@ngoayuda/drug-abuse-and-illicit-trafficking-424d4e144c45",
-      title: "DRUG ABUSE AND ILLICIT TRAFFICKING",
+      url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-2-12845c62e256",
+      title: "MY JOURNEY IN AYUDA - Divya Sharma",
       text:
-        "International Day Against Drug Abuse and Illicit Trafficking is a United Nations International Day ...",
+        "Back in my school days, we had an annual visit to the old age home and an orphanage once a year at least. We’d go there ...",
     },
     {
       id: 3,
@@ -82,16 +81,17 @@ const blogSection = {
     {
       id: 5,
       url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-981d2b56ae9e",
-      title: "MY JOURNEY IN AYUDA PART - 1",
+      title: "MY JOURNEY IN AYUDA - Utkarsh Gandhi",
       text:
         "When I look back at the two and a half years I have spent in this club, I see so many memories flooding my mind. I see the ...",
     },
     {
       id: 6,
-      url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-2-12845c62e256",
-      title: "MY JOURNEY IN AYUDA PART - 2",
+      url:
+        "https://medium.com/@ngoayuda/drug-abuse-and-illicit-trafficking-424d4e144c45",
+      title: "DRUG ABUSE AND ILLICIT TRAFFICKING",
       text:
-        "Back in my school days, we had an annual visit to the old age home and an orphanage once a year at least. We’d go there ...",
+        "International Day Against Drug Abuse and Illicit Trafficking is a United Nations International Day ...",
     },
   ],
 };
