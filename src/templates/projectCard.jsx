@@ -34,6 +34,7 @@ const ProjectCardBody = styled.div`
   width: fit-content;
   transform: none;
   margin: 18px;
+  z-index: 2;
   `};
 `;
 
@@ -69,7 +70,7 @@ const ProjectCardImageContainer = styled.div`
 
   ${media.thone`
   transform: none;
-  opacity: 0;
+  opacity: 0.2;
   position: relative;
   vertical-align: middle;
 `};
@@ -121,7 +122,7 @@ const ProjectButtonWrapper = styled.div`
   ${media.thone`
   margin: 20px 0;
   transform: translate(60%, 275px);
-  z-index: 1000;
+  z-index: 3;
   `};
 `;
 

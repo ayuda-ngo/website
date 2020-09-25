@@ -238,6 +238,7 @@ const EventCardWrapper = styled.div`
   ${media.desktop`
     width: 50%;
     transform: translate(100%, 100px);
+    height: fit-content;
   `};
 
   ${media.thone`
