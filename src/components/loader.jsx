@@ -1,9 +1,8 @@
 import React, { Component } from "react";
+import { media, mixins, theme } from "../styles/styles.jsx";
 
 import { Fade } from "react-reveal";
 import IconLogo from "../assets/logo.png";
-import { media } from "../styles/styles.jsx";
-import { mixins } from "../styles/styles.jsx";
 import styled from "styled-components";
 
 const LoaderWrapper = styled.div`
@@ -34,7 +33,7 @@ class PageLoader extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: false });
-    }, 1800);
+    }, theme.loaderDelay - 500);
   }
   render() {
     return (

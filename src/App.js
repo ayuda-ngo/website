@@ -24,7 +24,7 @@ class App extends Component {
     setTimeout(() => {
       this.setState({ loading: false });
       document.getElementById("body").style.backgroundColor = theme.colors.blue;
-    }, 2500);
+    }, theme.loaderDelay);
   }
 
   render() {
