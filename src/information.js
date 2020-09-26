@@ -58,7 +58,7 @@ const blogSection = {
     {
       id: 2,
       url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-2-12845c62e256",
-      title: "THE CHILDHOOD DREAM - Divya Shrama",
+      title: "THE CHILDHOOD DREAM - Divya Sharma",
       text:
         "Back in my school days, we had an annual visit to the old age home and an orphanage once a year at least. We’d go there ...",
     },
