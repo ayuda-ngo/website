@@ -58,7 +58,7 @@ const blogSection = {
     {
       id: 2,
       url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-2-12845c62e256",
-      title: "MY JOURNEY IN AYUDA - Divya Sharma",
+      title: "THE CHILDHOOD DREAM",
       text:
         "Back in my school days, we had an annual visit to the old age home and an orphanage once a year at least. We’d go there ...",
     },
@@ -110,7 +110,7 @@ const boardMembersSection = {
     {
       id: 1,
       name: "Vandana Mansur",
-      image: require("./assets/BoardMembers/1.webp"),
+      image: require("./assets/BoardMembers/1.jpg"),
       role: "President",
       instagram: "https://www.instagram.com/vandana.mansur",
       linkedin: "https://www.linkedin.com/in/vandana-mansur-9b727a188",
@@ -118,7 +118,7 @@ const boardMembersSection = {
     {
       id: 2,
       name: "Juhi Verma",
-      image: require("./assets/BoardMembers/2.webp"),
+      image: require("./assets/BoardMembers/2.jpg"),
       role: "Vice - President",
       instagram: "https://instagram.com/juhiii_verma",
       linkedin: "https://www.linkedin.com/in/juhi-verma-9b4278188",
@@ -126,7 +126,7 @@ const boardMembersSection = {
     {
       id: 3,
       name: "Aman Mirza",
-      image: require("./assets/BoardMembers/3.webp"),
+      image: require("./assets/BoardMembers/3.jpg"),
       role: "Internal Events Head",
       instagram: "https://www.instagram.com/a.m.a.n._.m.i.r.z.a",
       linkedin: "https://www.linkedin.com/in/mohammad-aman-mirza",
@@ -134,7 +134,7 @@ const boardMembersSection = {
     {
       id: 4,
       name: "Zikra Noman",
-      image: require("./assets/BoardMembers/4.webp"),
+      image: require("./assets/BoardMembers/4.jpg"),
       role: "Internal Events Head",
       instagram: "https://www.instagram.com/_ziiikra_",
       linkedin: "http://www.linkedin.com/in/zikra-noman-47b27a188",
@@ -142,14 +142,14 @@ const boardMembersSection = {
     {
       id: 5,
       name: "Mahanth",
-      image: require("./assets/BoardMembers/5.webp"),
+      image: require("./assets/BoardMembers/5.jpg"),
       role: "External Events Head",
       instagram: "https://www.instagram.com/mahanth_gates",
     },
     {
       id: 6,
       name: "Surya Salvatore",
-      image: require("./assets/BoardMembers/6.webp"),
+      image: require("./assets/BoardMembers/6.jpg"),
       role: "External Events Head",
       instagram: "https://instagram.com/_surya_salvatore_",
       linkedin: "https://www.linkedin.com/in/surya-sekaran-392281188",
@@ -157,7 +157,7 @@ const boardMembersSection = {
     {
       id: 7,
       name: "Rishi Vandhanaa",
-      image: require("./assets/BoardMembers/7.webp"),
+      image: require("./assets/BoardMembers/7.jpg"),
       role: "Editorial Head",
       instagram: "https://www.instagram.com/rishi_vandhanaa",
       linkedin: "https://www.linkedin.com/in/rishi-vandhanaa-k-2971351b3",
@@ -165,7 +165,7 @@ const boardMembersSection = {
     {
       id: 8,
       name: "Shivesh Sharan",
-      image: require("./assets/BoardMembers/8.webp"),
+      image: require("./assets/BoardMembers/8.jpg"),
       role: "Finance Head",
       instagram: "https://instagram.com/shivesh.sharan",
       linkedin: "https://www.linkedin.com/in/shivesh-sharan-b1b1ba113",
@@ -173,7 +173,7 @@ const boardMembersSection = {
     {
       id: 9,
       name: "Soham Gosavi",
-      image: require("./assets/BoardMembers/9.webp"),
+      image: require("./assets/BoardMembers/9.jpg"),
       role: "Publicity Head",
       intstagram: "https://www.instagram.com/sohamgosavi07",
       linkedin: "https://www.linkedin.com/in/soham-gosavi-b17a60195",
@@ -181,7 +181,7 @@ const boardMembersSection = {
     {
       id: 10,
       name: "Gitanjali Singh",
-      image: require("./assets/BoardMembers/10.webp"),
+      image: require("./assets/BoardMembers/10.jpg"),
       role: "HR",
       instagram: "https://www.instagram.com/_gitanjalisingh",
       linkedin: "https://www.linkedin.com/in/gitanjali-singh-1973161a0",
@@ -189,7 +189,7 @@ const boardMembersSection = {
     {
       id: 11,
       name: "Ayush Bhatia",
-      image: require("./assets/BoardMembers/11.webp"),
+      image: require("./assets/BoardMembers/11.jpg"),
       role: "Design Head",
       instagram: "https://www.instagram.com/bhatiaayush01",
     },
