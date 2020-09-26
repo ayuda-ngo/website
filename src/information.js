@@ -58,7 +58,7 @@ const blogSection = {
     {
       id: 2,
       url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-2-12845c62e256",
-      title: "THE CHILDHOOD DREAM",
+      title: "THE CHILDHOOD DREAM - Divya Shrama",
       text:
         "Back in my school days, we had an annual visit to the old age home and an orphanage once a year at least. We’d go there ...",
     },
@@ -299,6 +299,7 @@ const eventsSection = {
         "Ayuda’s flagship event that encourages students to pitch their start-up idea along with a budget plan. The start-up idea focuses on the social impact on people in any part of India.",
       image: require("./assets/events/social.jpg"),
     },
+
     {
       id: 3,
       name: "Event 3",
@@ -310,11 +311,12 @@ const eventsSection = {
     {
       id: 4,
       name: "Event 4",
-      heading: "Mind Talk",
+      heading: "Pongal Celebration",
       text:
-        'Sometimes all you need is for someone to just be there which can make all the difference. A live session "Mind talk" with Ann Zachariah, a counsellor, created an awareness amongst us leaving a major takeaway that all of us will remember and encorporate in our lives.',
-      image: require("./assets/events/mind-talks.jpg"),
+        "From eating special food to celebrating it all night with dance and bonfire, the festival not only marks the beginning of an auspicious year, but also brings the entire family together. Every year Ayuda celebrates the Tamil harvest festival, Pongal, visting Divine Mercy Old Age Home and Bethel's Institute.",
+      image: require("./assets/events/pongal.jpg"),
     },
+
     {
       id: 5,
       name: "Event 5",
@@ -326,10 +328,10 @@ const eventsSection = {
     {
       id: 6,
       name: "Event 6",
-      heading: "Pongal Celebration",
+      heading: "Mind Talk",
       text:
-        "From eating special food to celebrating it all night with dance and bonfire, the festival not only marks the beginning of an auspicious year, but also brings the entire family together. Every year Ayuda celebrates the Tamil harvest festival, Pongal, visting Divine Mercy Old Age Home and Bethel's Institute.",
-      image: require("./assets/events/pongal.jpg"),
+        'Sometimes all you need is for someone to just be there which can make all the difference. A live session "Mind talk" with Ann Zachariah, a counsellor, created an awareness amongst us leaving a major takeaway that all of us will remember and encorporate in our lives.',
+      image: require("./assets/events/mind-talks.jpg"),
     },
   ],
 };
