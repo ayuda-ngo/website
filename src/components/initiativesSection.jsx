@@ -30,18 +30,26 @@ export default function InitiativesSection() {
   return (
     <InitiativesSectionWrapper id="initiatives">
       <InitiativesContainer>
-        <Fade bottom distance="40px">
-          <div className="project-header p-3">
+        <div className="project-header p-3">
+          <Fade bottom distance="40px">
             <h1 className="heading">{initiativesSection.title}</h1>
+          </Fade>
+          <div
+            style={{
+              height: "2px",
+              background: "white",
+            }}
+          ></div>
+          <Fade delay={1000}>
             <p className="subTitle">{initiativesSection.subtitle}</p>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </InitiativesContainer>
       <InitiativesBody>
         {initiativesSection.initiatives.map((initiative, i) => {
           return (
-            <Fade bottom delay={150 * i} distance="20px">
-              <ProjectCard key={initiative.id} cardInfo={initiative} />
+            <Fade bottom delay={150 * i} distance="20px" key={initiative.id}>
+              <ProjectCard cardInfo={initiative} />
             </Fade>
           );
         })}

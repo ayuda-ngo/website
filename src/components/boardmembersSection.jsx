@@ -38,18 +38,24 @@ export default function BoardMembersSection() {
   return (
     <BoardMembersSectionWrapper id="members">
       <BoardMembersContainer>
-        <Fade bottom distance="40px">
-          <div className="boardmembers-header p-3 w-100">
+        <div className="boardmembers-header p-3 w-100">
+          <Fade bottom distance="40px">
             <h1 className="heading">{boardMembersSection.title}</h1>
-          </div>
-        </Fade>
+          </Fade>
+          <div
+            style={{
+              height: "2px",
+              background: "white",
+            }}
+          ></div>
+        </div>
       </BoardMembersContainer>
 
       <MembersCardDiv>
         {boardMembersSection.boardMembers.map((member, i) => {
           return (
-            <Fade bottom delay={80 * i} distance="20px">
-              <MemberCard key={member.id} cardInfo={member} />
+            <Fade bottom delay={80 * i} distance="20px" key={member.id}>
+              <MemberCard cardInfo={member} />
             </Fade>
           );
         })}

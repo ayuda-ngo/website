@@ -86,7 +86,11 @@ export default function MemberCard({ cardInfo }) {
   return (
     <StyledCard>
       <MemberImageDiv>
-        <MemberRoundedImage src={cardInfo.image} alt={cardInfo.name} />
+        <MemberRoundedImage
+          loading="lazy"
+          src={cardInfo.image}
+          alt={cardInfo.name}
+        />
         <MemberOverlay>
           <MemberSocialMedia>
             {cardInfo.linkedin ? (

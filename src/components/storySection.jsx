@@ -12,18 +12,20 @@ const StoryDiv = styled.div`
   display: block;
   padding: 20px 10px;
   width: 98%;
-  margin: 0px auto;
+  margin: 0 auto;
   background-color: none;
 `;
 
 const StoryTitle = styled.div`
   padding: 3px;
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
 `;
 
 const StoryHeading = styled.h4`
   text-align: center;
   padding: 10px;
-  padding-top: 30px;
 `;
 
 const StoryBody = styled.div`
@@ -46,6 +48,10 @@ const StoryBody = styled.div`
   ${media.tiny`
     font-size: ${fontSizes.smish};
   `};
+`;
+
+const PlayButton = styled.i`
+  color: rgba(3, 17, 26);
 `;
 
 const VideoContainer = styled.div`
@@ -79,12 +85,19 @@ const StoryContainerWrapper = styled(Section)`
 export default function StorySection() {
   return (
     <StoryContainerWrapper id="story">
-      <StoryDiv>
+      <StoryTitle>
         <Fade bottom distance="40px">
-          <StoryTitle>
-            <h1 className="heading p-3 mb-5">{storySection.title}</h1>
-          </StoryTitle>
+          <h1 className="heading">{storySection.title}</h1>
         </Fade>
+        <div
+          style={{
+            height: "2px",
+            background: "white",
+            // transform: "translateY(-50px)",
+          }}
+        ></div>
+      </StoryTitle>
+      <StoryDiv>
         <div className="row">
           <div className="col-lg-6">
             <Fade left duration={600} distance="20px">
@@ -117,6 +130,7 @@ export default function StorySection() {
               url={storySection.video.src}
               controls
               preload="metadata"
+              playIcon={<PlayButton className="fa fa-play fa-4x"></PlayButton>}
             />
           </VideoContainer>
         </Fade>

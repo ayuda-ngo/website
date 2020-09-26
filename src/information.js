@@ -57,27 +57,41 @@ const blogSection = {
     },
     {
       id: 2,
-      url:
-        "https://medium.com/@ngoayuda/drug-abuse-and-illicit-trafficking-424d4e144c45",
-      title: "DRUG ABUSE AND ILLICIT TRAFFICKING",
+      url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-2-12845c62e256",
+      title: "THE CHILDHOOD DREAM - Divya Shrama",
       text:
-        "International Day Against Drug Abuse and Illicit Trafficking is a United Nations International Day...",
+        "Back in my school days, we had an annual visit to the old age home and an orphanage once a year at least. We’d go there ...",
     },
     {
       id: 3,
       url:
         "https://medium.com/@ngoayuda/the-predicament-of-rising-population-97653858c8a",
-      title: "The Predicament of Rising Population",
+      title: "THE PREDICAMENT OF RISING POPULATION",
       text:
-        "Every year, on July 11, World Population Day is observed by the UN with the primary narrative being to promulgate...",
+        "Every year, on July 11, World Population Day is observed by the UN with the primary narrative being to promulgate ...",
     },
     {
       id: 4,
       url:
-        "https://medium.com/@ngoayuda/our-education-under-attack-a4ab134ab0a9://medium.com/@ngoayuda/the-predicament-of-rising-population-97653858c8a",
-      title: "Our Education under attack.",
+        "https://medium.com/@ngoayuda/dont-give-up-you-are-important-as-your-life-dc3aa24027c2",
+      title: "DON’T GIVE UP - You are Important as your Life",
       text:
-        "The morning of October 9, 2012, 15-year-old Malala Yousafzai had been shot by the Taliban on her way home from school...",
+        "Every hour one student commits suicide in India, with about 28 such suicides reported every day, according to data ...",
+    },
+    {
+      id: 5,
+      url: "https://medium.com/@ngoayuda/my-journey-in-ayuda-981d2b56ae9e",
+      title: "MY JOURNEY IN AYUDA - Utkarsh Gandhi",
+      text:
+        "When I look back at the two and a half years I have spent in this club, I see so many memories flooding my mind. I see the ...",
+    },
+    {
+      id: 6,
+      url:
+        "https://medium.com/@ngoayuda/drug-abuse-and-illicit-trafficking-424d4e144c45",
+      title: "DRUG ABUSE AND ILLICIT TRAFFICKING",
+      text:
+        "International Day Against Drug Abuse and Illicit Trafficking is a United Nations International Day ...",
     },
   ],
 };
@@ -96,7 +110,7 @@ const boardMembersSection = {
     {
       id: 1,
       name: "Vandana Mansur",
-      image: require("./assets/BoardMembers/1.webp"),
+      image: require("./assets/BoardMembers/1.jpg"),
       role: "President",
       instagram: "https://www.instagram.com/vandana.mansur",
       linkedin: "https://www.linkedin.com/in/vandana-mansur-9b727a188",
@@ -104,7 +118,7 @@ const boardMembersSection = {
     {
       id: 2,
       name: "Juhi Verma",
-      image: require("./assets/BoardMembers/2.webp"),
+      image: require("./assets/BoardMembers/2.jpg"),
       role: "Vice - President",
       instagram: "https://instagram.com/juhiii_verma",
       linkedin: "https://www.linkedin.com/in/juhi-verma-9b4278188",
@@ -112,7 +126,7 @@ const boardMembersSection = {
     {
       id: 3,
       name: "Aman Mirza",
-      image: require("./assets/BoardMembers/3.webp"),
+      image: require("./assets/BoardMembers/3.jpg"),
       role: "Internal Events Head",
       instagram: "https://www.instagram.com/a.m.a.n._.m.i.r.z.a",
       linkedin: "https://www.linkedin.com/in/mohammad-aman-mirza",
@@ -120,7 +134,7 @@ const boardMembersSection = {
     {
       id: 4,
       name: "Zikra Noman",
-      image: require("./assets/BoardMembers/4.webp"),
+      image: require("./assets/BoardMembers/4.jpg"),
       role: "Internal Events Head",
       instagram: "https://www.instagram.com/_ziiikra_",
       linkedin: "http://www.linkedin.com/in/zikra-noman-47b27a188",
@@ -128,14 +142,14 @@ const boardMembersSection = {
     {
       id: 5,
       name: "Mahanth",
-      image: require("./assets/BoardMembers/5.webp"),
+      image: require("./assets/BoardMembers/5.jpg"),
       role: "External Events Head",
       instagram: "https://www.instagram.com/mahanth_gates",
     },
     {
       id: 6,
       name: "Surya Salvatore",
-      image: require("./assets/BoardMembers/6.webp"),
+      image: require("./assets/BoardMembers/6.jpg"),
       role: "External Events Head",
       instagram: "https://instagram.com/_surya_salvatore_",
       linkedin: "https://www.linkedin.com/in/surya-sekaran-392281188",
@@ -143,7 +157,7 @@ const boardMembersSection = {
     {
       id: 7,
       name: "Rishi Vandhanaa",
-      image: require("./assets/BoardMembers/7.webp"),
+      image: require("./assets/BoardMembers/7.jpg"),
       role: "Editorial Head",
       instagram: "https://www.instagram.com/rishi_vandhanaa",
       linkedin: "https://www.linkedin.com/in/rishi-vandhanaa-k-2971351b3",
@@ -151,7 +165,7 @@ const boardMembersSection = {
     {
       id: 8,
       name: "Shivesh Sharan",
-      image: require("./assets/BoardMembers/8.webp"),
+      image: require("./assets/BoardMembers/8.jpg"),
       role: "Finance Head",
       instagram: "https://instagram.com/shivesh.sharan",
       linkedin: "https://www.linkedin.com/in/shivesh-sharan-b1b1ba113",
@@ -159,7 +173,7 @@ const boardMembersSection = {
     {
       id: 9,
       name: "Soham Gosavi",
-      image: require("./assets/BoardMembers/9.webp"),
+      image: require("./assets/BoardMembers/9.jpg"),
       role: "Publicity Head",
       intstagram: "https://www.instagram.com/sohamgosavi07",
       linkedin: "https://www.linkedin.com/in/soham-gosavi-b17a60195",
@@ -167,7 +181,7 @@ const boardMembersSection = {
     {
       id: 10,
       name: "Gitanjali Singh",
-      image: require("./assets/BoardMembers/10.webp"),
+      image: require("./assets/BoardMembers/10.jpg"),
       role: "HR",
       instagram: "https://www.instagram.com/_gitanjalisingh",
       linkedin: "https://www.linkedin.com/in/gitanjali-singh-1973161a0",
@@ -175,7 +189,7 @@ const boardMembersSection = {
     {
       id: 11,
       name: "Ayush Bhatia",
-      image: require("./assets/BoardMembers/11.webp"),
+      image: require("./assets/BoardMembers/11.jpg"),
       role: "Design Head",
       instagram: "https://www.instagram.com/bhatiaayush01",
     },
@@ -235,7 +249,7 @@ const initiativesSection = {
       text:
         "Our student volunteers go to schools in Vellore and teach students using creative methods. We provide more resources for their academic and holistic development. The resources usually includes fun games with an academic approach, group discussions and much more.",
       image: require("./assets/images/gyaan.png"),
-      link: "https://www.google.com",
+      link: "https://medium.com/series/40893625143b",
     },
     {
       id: 3,
@@ -247,9 +261,9 @@ const initiativesSection = {
     },
     {
       id: 4,
-      title: "PROJECT NIRMAN",
+      title: "PROJECT NIRMAAN",
       text:
-        "This is an ongoing effort made to provide for the needy by effective means. We collect old clothes, unused stationery items and other daily essential items from our students itself, by setting up donation boxes in our hostels where people can drop item",
+        "This is an ongoing effort made to provide for the needy by effective means. We collect old clothes, unused stationery items and other daily essential items from our students itself, by setting up donation boxes in our hostels where people can drop item.",
       image: require("./assets/images/nirman.png"),
       link: "https://medium.com/series/fb1492a32180",
     },
@@ -274,7 +288,7 @@ const eventsSection = {
       name: "Event 1",
       heading: "Peace Carnival",
       text:
-        " Ayuda conducted a fun event to make a Sunday evening exciting by organising a polaroid booth, a photo booth, and games such as: spin-the-wheel, musical chairs, and much more.",
+        "Ayuda conducts a fun event to make a Sunday evening exciting by putting up plays on spreading humanity, organising a polaroid booth, a photo booth, and games such as: spin-the-wheel, musical chairs, and much more.",
       image: require("./assets/events/peace.jpg"),
     },
     {
@@ -285,29 +299,39 @@ const eventsSection = {
         "Ayuda’s flagship event that encourages students to pitch their start-up idea along with a budget plan. The start-up idea focuses on the social impact on people in any part of India.",
       image: require("./assets/events/social.jpg"),
     },
+
     {
       id: 3,
       name: "Event 3",
-      heading: "Craftsmen.",
+      heading: "Christmas",
       text:
-        "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art",
-      image: require("./assets/events/craftsman.jpg"),
+        "We often visit a care-taking facility for needy children named Nambikai Illam. Christmas'19 we had a drawing competition for the kids and also fun with Santa giving away candies and gifts. We learned the importance of life’s little things we take for granted from these children, whenever we'd receive a smile from these children, it fills our hearts with happiness.",
+      image: require("./assets/events/christmas.jpg"),
     },
     {
       id: 4,
       name: "Event 4",
-      heading: "Mind Talk",
+      heading: "Pongal Celebration",
       text:
-        'Sometimes all you need is for someone to just be there which can make all the difference. A live session "Mind talk" with Ann Zachariah, a counsellor, created an awareness amongst us leaving a major takeaway that all of us will remember and encorporate in our lives.',
-      image: require("./assets/black16.jpg"),
+        "From eating special food to celebrating it all night with dance and bonfire, the festival not only marks the beginning of an auspicious year, but also brings the entire family together. Every year Ayuda celebrates the Tamil harvest festival, Pongal, visting Divine Mercy Old Age Home and Bethel's Institute.",
+      image: require("./assets/events/pongal.jpg"),
     },
+
     {
       id: 5,
       name: "Event 5",
-      heading: "Photography Day",
+      heading: "Craftsmen",
       text:
-        "Ayuda conducted an event called ‘ Life through your lens ’ where students exhibited their photography skills by capturing abstract shots or clips.",
-      image: require("./assets/events/photography.jpg"),
+        "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art.",
+      image: require("./assets/events/craftsman.jpg"),
+    },
+    {
+      id: 6,
+      name: "Event 6",
+      heading: "Mind Talk",
+      text:
+        'Sometimes all you need is for someone to just be there which can make all the difference. A live session "Mind talk" with Ann Zachariah, a counsellor, created an awareness amongst us leaving a major takeaway that all of us will remember and encorporate in our lives.',
+      image: require("./assets/events/mind-talks.jpg"),
     },
   ],
 };

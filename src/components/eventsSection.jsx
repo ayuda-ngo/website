@@ -11,7 +11,7 @@ const { colors, fontSizes, fonts, cardShadow, borderRadius } = theme;
 
 const EventsSectionWrapper = styled(Section)`
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   color: ${colors.white};
 
   ${media.thone`margin: 0;`};
@@ -47,6 +47,7 @@ const StyledTabList = styled.ul`
     width: calc(100% + 100px);
     margin-left: -50px;
   `};
+
   ${media.phablet`
     width: calc(100% + 50px);
     margin-left: -25px;
@@ -157,20 +158,20 @@ const StyledTabContent = styled.div`
   position: relative;
   width: 100%;
   height: 200px;
-  padding-top: 12px;
   padding-left: 30px;
   outline: none;
   // border: 2px solid black;
 
-  ${media.tablet`padding-left: 20px;
-  height: 600px;
+  ${media.tablet`
+    padding-left: 20px;
+    height: 600px;
   `};
 
   ${media.thone`
     padding-left: 0;
     padding-top: 0;
     height: 500px;
-    background-color: rgba(3, 17, 26, 0.8);
+    background-color: none;
     border-radius: 10px;
   `};
 `;
@@ -182,43 +183,44 @@ const EventHeading = styled.div`
 
   ${media.thone`
     margin-top: 20px;
+    text-align: center; 
   `};
 `;
 
 const EventText = styled.div`
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 20px 20px;
   font-size: ${fontSizes.smish};
   color: inherit;
 
   ${media.thone`
-    margin-top: 20px;
     text-align: center;
     font-size: ${fontSizes.md};
   `};
 `;
 
 const EventCardImageWrapper = styled.div`
-  width: 100%;
   // border: 2px solid red;
 
   ${media.thone`
-    width: 100%;
-    height: inherit;
+    height: 60%;
     position: absolute;
-    opacity: 0;
 `};
 `;
 
 const EventCardImage = styled.img`
-  height: 280px;
+  height: 300px;
   width: 80%;
   border-radius: 20px;
-
   box-shadow: ${cardShadow};
+
+  ${media.desktop`
+    height: 280px;
+  `};
+
   ${media.thone`
-  border-radius: 10px;
-  width: 100%;
-  height: inherit;
+    border-radius: 10px;
+    width: 100%;
+    height: inherit;
 `};
 `;
 
@@ -229,22 +231,26 @@ const EventCardWrapper = styled.div`
   position: absolute;
   width: 45%;
   height: 220px;
-  transform: translate(100%, 90px);
+  transform: translate(120%, 120px);
+
+  // border: 2px solid green;
 
   ${media.desktop`
     width: 50%;
     transform: translate(100%, 100px);
-`};
+    height: fit-content;
+  `};
 
   ${media.thone`
-  color: ${colors.white};
-  background-color: unset;
-  border-radius: 10px;
-  transform: none;
-  width: 100%;
-  height: inherit;
-  opacity: 1;
-  box-shadow: ${cardShadow};
+    margin-top: 75%;
+    color: ${colors.white};
+    background-color: unset;
+    border-radius: 10px;
+    transform: none;
+    width: 100%;
+    height: fit-content;
+    opacity: 1;
+    box-shadow: ${cardShadow};
 `};
 `;
 
@@ -276,11 +282,18 @@ export default function EventsSection() {
     <EventsSectionWrapper id="events">
       <EventsDiv>
         <EventsTitle>
-          <Fade bottom distance="40px">
-            <div className="events-header">
+          <div className="events-header">
+            <Fade bottom distance="40px">
               <h1 className="heading">{eventsSection.title}</h1>
-            </div>
-          </Fade>
+            </Fade>
+            <div
+              style={{
+                height: "2px",
+                background: "white",
+                // transform: "translateY(-50px)",
+              }}
+            ></div>
+          </div>
         </EventsTitle>
       </EventsDiv>
 
@@ -322,7 +335,11 @@ export default function EventsSection() {
                 <EventText>{event.text}</EventText>
               </EventCardWrapper>
               <EventCardImageWrapper>
-                <EventCardImage alt={event.heading} src={event.image} />
+                <EventCardImage
+                  loading="lazy"
+                  alt={event.heading}
+                  src={event.image}
+                />
               </EventCardImageWrapper>
             </StyledTabContent>
           );

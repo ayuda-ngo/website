@@ -41,20 +41,29 @@ export default function BlogSection() {
   return (
     <BlogSectionWrappper id="blogs">
       <BlogsContainer>
-        <Fade bottom distance="40px">
-          <div className="blog-header p-3">
+        <div className="blog-header p-3">
+          <Fade bottom distance="40px">
             <h1 className="heading">{blogSection.title}</h1>
+          </Fade>
+          <div
+            style={{
+              height: "2px",
+              background: "white",
+              // transform: "translateY(-50px)",
+            }}
+          ></div>
+          <Fade delay={1000}>
             <p className="subTitle">{blogSection.subtitle}</p>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </BlogsContainer>
 
       <BlogsMain>
         <BlogsBody>
           {blogSection.blogs.map((blog, i) => {
             return (
-              <Fade bottom delay={150 * i} distance="20px">
-                <BlogCard key={blog.id} cardInfo={blog} />
+              <Fade bottom delay={150 * i} distance="20px" key={blog.id}>
+                <BlogCard cardInfo={blog} />
               </Fade>
             );
           })}

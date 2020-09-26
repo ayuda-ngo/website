@@ -50,7 +50,9 @@ export default function BlogCard({ cardInfo }) {
   return (
     <BlogContainer>
       <BlogHeading>{cardInfo.title}</BlogHeading>
-      <BlogText href={cardInfo.url}>{cardInfo.text}</BlogText>
+      <BlogText href={cardInfo.url} rel="noopener noreferrer" target="_blank">
+        {cardInfo.text}
+      </BlogText>
     </BlogContainer>
   );
 }

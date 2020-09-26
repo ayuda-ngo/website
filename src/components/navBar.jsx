@@ -245,7 +245,7 @@ class NavBar extends Component {
           <StyledLink>
             <StyledList>
               {navLinks.map(({ url, name }, i) => (
-                <Fade top delay={200 * i}>
+                <Fade top delay={200 * i} key={i}>
                   <StyledListItem key={i}>
                     <Link href={url}>{name}</Link>{" "}
                   </StyledListItem>
