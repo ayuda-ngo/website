@@ -328,7 +328,11 @@ export default function EventsSection() {
                 <EventText>{event.text}</EventText>
               </EventCardWrapper>
               <EventCardImageWrapper>
-                <EventCardImage alt={event.heading} src={event.image} />
+                <EventCardImage
+                  loading="lazy"
+                  alt={event.heading}
+                  src={event.image}
+                />
               </EventCardImageWrapper>
             </StyledTabContent>
           );
