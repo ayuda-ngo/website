@@ -282,11 +282,18 @@ export default function EventsSection() {
     <EventsSectionWrapper id="events">
       <EventsDiv>
         <EventsTitle>
-          <Fade bottom distance="40px">
-            <div className="events-header">
+          <div className="events-header">
+            <Fade bottom distance="40px">
               <h1 className="heading">{eventsSection.title}</h1>
-            </div>
-          </Fade>
+            </Fade>
+            <div
+              style={{
+                height: "2px",
+                background: "white",
+                // transform: "translateY(-50px)",
+              }}
+            ></div>
+          </div>
         </EventsTitle>
       </EventsDiv>
 

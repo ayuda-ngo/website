@@ -64,3 +64,7 @@ body::-webkit-scrollbar-thumb {
 .medium i:hover {
   color: white;
 }
+
+.subTitle {
+  margin: 1rem;
+}

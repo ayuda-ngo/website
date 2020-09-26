@@ -323,6 +323,14 @@ const eventsSection = {
         "Students had the opportunity to showcase their talent, concern and creativity regarding various topics in the form of paintings, sketches, photographs, poems, shayari and digital art.",
       image: require("./assets/events/craftsman.jpg"),
     },
+    {
+      id: 6,
+      name: "Event 6",
+      heading: "Pongal Celebration",
+      text:
+        "From eating special food to celebrating it all night with dance and bonfire, the festival not only marks the beginning of an auspicious year, but also brings the entire family together. Every year Ayuda celebrates the Tamil harvest festival, Pongal, visting Divine Mercy Old Age Home and Bethel's Institute.",
+      image: require("./assets/events/pongal.jpg"),
+    },
   ],
 };
 
