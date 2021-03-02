@@ -1,6 +1,6 @@
-# AYUDA NGO
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0f666e5-891e-4a2e-9297-83e47ff17dd2/deploy-status)](https://app.netlify.com/sites/ngo-ayuda/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e123168b-5db3-4b3b-a539-2711ed2e416b/deploy-status)](https://app.netlify.com/sites/ngo-ayuda/deploys)
+# AYUDA NGO
 
 This is the website for [Ayuda NGO](https://ayuda-ngo.github.io/ayuda-website/).
 
