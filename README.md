@@ -26,3 +26,7 @@ The website currently has the following sections
    Team members are what makes the team. Our amazing board members of the current year can be seen here.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Contributors
+
+- @th3c0d3br34ker (Jainam Desai)
